@@ -13,8 +13,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/traceroute"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/traceroute"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 var errFlags = errors.New("invalid flag/argument usage")

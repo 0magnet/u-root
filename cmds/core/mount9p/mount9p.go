@@ -18,8 +18,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/u-root/u-root/pkg/ssh9p"
-	"github.com/u-root/u-root/pkg/sshstream"
+	"github.com/0magnet/u-root/pkg/ssh9p"
+	"github.com/0magnet/u-root/pkg/sshstream"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sys/unix"
 )

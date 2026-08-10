@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/align"
-	"github.com/u-root/u-root/pkg/strace/internal/abi"
-	sbinary "github.com/u-root/u-root/pkg/strace/internal/binary"
+	"github.com/0magnet/u-root/pkg/align"
+	"github.com/0magnet/u-root/pkg/strace/internal/abi"
+	sbinary "github.com/0magnet/u-root/pkg/strace/internal/binary"
 	"golang.org/x/sys/unix"
 )
 

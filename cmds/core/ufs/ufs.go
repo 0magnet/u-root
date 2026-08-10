@@ -37,9 +37,9 @@ import (
 
 	"github.com/hugelgupf/p9/fsimpl/localfs"
 	"github.com/hugelgupf/p9/p9"
-	"github.com/u-root/u-root/pkg/p9dev"
-	"github.com/u-root/u-root/pkg/ssh9p"
-	"github.com/u-root/u-root/pkg/sshstream"
+	"github.com/0magnet/u-root/pkg/p9dev"
+	"github.com/0magnet/u-root/pkg/ssh9p"
+	"github.com/0magnet/u-root/pkg/sshstream"
 	"golang.org/x/crypto/ssh"
 )
 

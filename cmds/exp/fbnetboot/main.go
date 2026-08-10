@@ -27,9 +27,9 @@ import (
 	"github.com/insomniacslk/dhcp/iana"
 	"github.com/insomniacslk/dhcp/interfaces"
 	"github.com/insomniacslk/dhcp/netboot"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/crypto"
-	"github.com/u-root/u-root/pkg/ntpdate"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/crypto"
+	"github.com/0magnet/u-root/pkg/ntpdate"
 
 	// To build the dependencies of this package with TinyGo, we need to include
 	// the cpuid package, since tinygo does not support the asm code in the

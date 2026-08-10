@@ -24,7 +24,7 @@ import (
 	"golang.org/x/net/proxy"
 
 	"github.com/mdlayher/vsock"
-	"github.com/u-root/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/netcat"
 )
 
 var osConnectors = map[netcat.SocketType]func(string, string) (net.Conn, error){}

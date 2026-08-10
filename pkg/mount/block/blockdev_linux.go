@@ -21,8 +21,8 @@ import (
 	"unsafe"
 
 	"github.com/rekby/gpt"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/pci"
 	"golang.org/x/sys/unix"
 )
 

@@ -18,7 +18,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/boot/zimage"
+	"github.com/0magnet/u-root/pkg/boot/zimage"
 )
 
 func main() {

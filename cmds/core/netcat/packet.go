@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/u-root/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/netcat"
 )
 
 // buffer represents a fixed size (64 KB) byte array, with the number of bytes

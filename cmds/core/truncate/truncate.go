@@ -27,7 +27,7 @@ import (
 	"os"
 
 	"github.com/rck/unit"
-	"github.com/u-root/u-root/pkg/uroot/util"
+	"github.com/0magnet/u-root/pkg/uroot/util"
 )
 
 const usage = "truncate [-c] -s size file..."

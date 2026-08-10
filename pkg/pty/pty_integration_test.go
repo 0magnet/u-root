@@ -19,8 +19,8 @@ func TestIntegration(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/pty"),
-		govmtest.WithUimage(uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/echo")),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/pty"),
+		govmtest.WithUimage(uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/echo")),
 		govmtest.WithQEMUFn(qemu.WithVMTimeout(2*time.Minute)),
 	)
 }

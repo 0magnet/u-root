@@ -12,7 +12,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/gzip"
+	"github.com/0magnet/u-root/pkg/gzip"
 )
 
 func run(args []string) error {

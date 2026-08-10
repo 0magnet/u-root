@@ -37,10 +37,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/esxi"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/esxi"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 type cmd struct {

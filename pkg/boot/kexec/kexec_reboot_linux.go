@@ -10,7 +10,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/u-root/u-root/pkg/watchdogd"
+	"github.com/0magnet/u-root/pkg/watchdogd"
 )
 
 // Reboot executes a kernel previously loaded with FileInit.

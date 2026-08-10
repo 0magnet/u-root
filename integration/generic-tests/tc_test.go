@@ -29,11 +29,11 @@ func TCVM(t *testing.T, name, script string, net *qnetwork.InterVM) *qemu.VM {
 	return scriptvm.Start(t, name, script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cmp",
-				"github.com/u-root/u-root/cmds/core/tee",
+				"github.com/0magnet/u-root/cmds/core/cmp",
+				"github.com/0magnet/u-root/cmds/core/tee",
 			),
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/exp/tc",
+				"github.com/0magnet/u-root/cmds/exp/tc",
 			),
 			uimage.WithFiles(
 				"testdata/tc/qdisc.want:qdisc.want",

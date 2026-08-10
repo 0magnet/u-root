@@ -15,9 +15,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/u-root/u-root/pkg/hsskey"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/mount/scuzz"
+	"github.com/0magnet/u-root/pkg/hsskey"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount/scuzz"
 )
 
 const (

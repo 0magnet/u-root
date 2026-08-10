@@ -8,8 +8,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/u-root/u-root/pkg/flash"
-	"github.com/u-root/u-root/pkg/flash/spimock"
+	"github.com/0magnet/u-root/pkg/flash"
+	"github.com/0magnet/u-root/pkg/flash/spimock"
 )
 
 type dummyProgrammer struct {

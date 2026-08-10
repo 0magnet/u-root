@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/testutil"
+	"github.com/0magnet/u-root/pkg/testutil"
 )
 
 func TestDU(t *testing.T) {

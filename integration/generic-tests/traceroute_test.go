@@ -224,15 +224,15 @@ func TestTraceroute(t *testing.T) {
 	vmA := scriptvm.Start(t, "vmA", scriptHostA.String(),
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
-				"github.com/u-root/u-root/cmds/core/ping",
-				"github.com/u-root/u-root/cmds/core/grep",
-				"github.com/u-root/u-root/cmds/core/tail",
-				"github.com/u-root/u-root/cmds/core/netcat",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/ping",
+				"github.com/0magnet/u-root/cmds/core/grep",
+				"github.com/0magnet/u-root/cmds/core/tail",
+				"github.com/0magnet/u-root/cmds/core/netcat",
 			),
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/exp/traceroute",
+				"github.com/0magnet/u-root/cmds/exp/traceroute",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -244,12 +244,12 @@ func TestTraceroute(t *testing.T) {
 	vmB := scriptvm.Start(t, "vmB", scriptHostB.String(),
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/echo",
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
-				"github.com/u-root/u-root/cmds/core/ping",
-				"github.com/u-root/u-root/cmds/core/netcat",
-				"github.com/u-root/u-root/cmds/core/grep",
+				"github.com/0magnet/u-root/cmds/core/echo",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/ping",
+				"github.com/0magnet/u-root/cmds/core/netcat",
+				"github.com/0magnet/u-root/cmds/core/grep",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -265,14 +265,14 @@ func TestTraceroute(t *testing.T) {
 	vmC := scriptvm.Start(t, "vmC", scriptHostC.String(),
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/echo",
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
-				"github.com/u-root/u-root/cmds/core/netcat",
-				"github.com/u-root/u-root/cmds/core/grep",
-				"github.com/u-root/u-root/cmds/core/tail",
-				"github.com/u-root/u-root/cmds/core/kill",
-				"github.com/u-root/u-root/cmds/core/pidof",
+				"github.com/0magnet/u-root/cmds/core/echo",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/netcat",
+				"github.com/0magnet/u-root/cmds/core/grep",
+				"github.com/0magnet/u-root/cmds/core/tail",
+				"github.com/0magnet/u-root/cmds/core/kill",
+				"github.com/0magnet/u-root/cmds/core/pidof",
 			),
 		),
 		scriptvm.WithQEMUFn(

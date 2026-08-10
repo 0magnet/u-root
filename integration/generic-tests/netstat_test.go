@@ -182,15 +182,15 @@ func TestNetstat(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script.String(),
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/echo",
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/mkfifo",
-				"github.com/u-root/u-root/cmds/core/netcat",
-				"github.com/u-root/u-root/cmds/core/ping",
-				"github.com/u-root/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/echo",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/mkfifo",
+				"github.com/0magnet/u-root/cmds/core/netcat",
+				"github.com/0magnet/u-root/cmds/core/ping",
+				"github.com/0magnet/u-root/cmds/core/sleep",
 			),
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/core/netstat",
+				"github.com/0magnet/u-root/cmds/core/netstat",
 			),
 		),
 		scriptvm.WithQEMUFn(

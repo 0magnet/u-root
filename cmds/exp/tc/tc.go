@@ -14,7 +14,7 @@ import (
 	"strings"
 
 	"github.com/florianl/go-tc"
-	trafficctl "github.com/u-root/u-root/pkg/tc"
+	trafficctl "github.com/0magnet/u-root/pkg/tc"
 
 	// To build the dependencies of this package with TinyGo, we need to include
 	// the cpuid package, since tinygo does not support the asm code in the

@@ -13,8 +13,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/u-root/u-root/pkg/netcat"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 func TestEvalParams(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/u-root/u-root
+module github.com/0magnet/u-root
 
 go 1.25.7
 
@@ -85,7 +85,7 @@ require (
 	github.com/opencontainers/image-spec v1.1.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rasky/go-xdr v0.0.0-20170124162913-1a41d1a06c93 // indirect
-	github.com/u-root/u-root/pkg/uroot v0.0.0-00010101000000-000000000000 // indirect
+	github.com/u-root/u-root v0.12.1-0.20240114161452-ab3534910ced // indirect
 	github.com/vbatts/tar-split v0.12.1 // indirect
 	github.com/willscott/go-nfs v0.0.0-20240424173852-04b947a7e58a // indirect
 	github.com/willscott/go-nfs-client v0.0.0-20240104095149-b44639837b00 // indirect
@@ -104,7 +104,6 @@ require (
 	github.com/hugelgupf/go-shlex v0.0.0-20200702092117-c80c9d0918fa // indirect
 	github.com/josharian/native v1.1.0 // indirect
 	github.com/jsimonetti/rtnetlink v1.3.5 // indirect
-	github.com/kaey/framebuffer v0.0.0-20140402104929-7b385489a1ff // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
@@ -145,4 +144,3 @@ retract (
 )
 
 // For github.com/hugelgupf/p9/fsimpl/localfs
-replace github.com/u-root/u-root/pkg/uroot => ./

@@ -11,7 +11,7 @@ import (
 	"io"
 	"testing"
 
-	trafficctl "github.com/u-root/u-root/pkg/tc"
+	trafficctl "github.com/0magnet/u-root/pkg/tc"
 )
 
 type DummyTctl struct{}

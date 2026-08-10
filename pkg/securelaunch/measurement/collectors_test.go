@@ -8,7 +8,7 @@ import (
 	"log"
 	"testing"
 
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
 )
 
 var storage_config = `

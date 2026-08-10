@@ -12,7 +12,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/pci"
 )
 
 const (

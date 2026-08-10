@@ -14,9 +14,9 @@ import (
 	"math"
 	"os"
 
-	"github.com/u-root/u-root/pkg/acpi"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/smbios"
+	"github.com/0magnet/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/smbios"
 )
 
 var (

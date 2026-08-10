@@ -9,7 +9,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/u-root/u-root/pkg/upath"
+	"github.com/0magnet/u-root/pkg/upath"
 )
 
 var osDefault = func(*exec.Cmd) {}

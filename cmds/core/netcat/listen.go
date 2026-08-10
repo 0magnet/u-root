@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/mdlayher/vsock"
-	"github.com/u-root/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/netcat"
 )
 
 var osListeners = map[netcat.SocketType]func(string, string) (net.Listener, error){}

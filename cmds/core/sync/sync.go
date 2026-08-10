@@ -18,7 +18,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/u-root/u-root/pkg/uroot/util"
+	"github.com/0magnet/u-root/pkg/uroot/util"
 )
 
 var (

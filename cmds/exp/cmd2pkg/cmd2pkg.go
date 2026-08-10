@@ -11,7 +11,7 @@ import (
 	"os"
 
 	"github.com/u-root/gobusybox/src/pkg/golang"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 type command struct {

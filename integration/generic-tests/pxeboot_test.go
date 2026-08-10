@@ -14,7 +14,7 @@ import (
 	"github.com/hugelgupf/vmtest/qemu/qnetwork"
 	"github.com/hugelgupf/vmtest/scriptvm"
 	"github.com/u-root/mkuimage/uimage"
-	"github.com/u-root/u-root/pkg/testutil"
+	"github.com/0magnet/u-root/pkg/testutil"
 )
 
 // TestPxeboot runs a server and client to test pxebooting a node.
@@ -30,9 +30,9 @@ func TestPxeboot4(t *testing.T) {
 	serverVM := scriptvm.Start(t, "pxe_server", serverScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/ls",
-				"github.com/u-root/u-root/cmds/exp/pxeserver",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/ls",
+				"github.com/0magnet/u-root/cmds/exp/pxeserver",
 			),
 			uimage.WithFiles("./testdata/pxe:pxeroot"),
 		),
@@ -49,7 +49,7 @@ func TestPxeboot4(t *testing.T) {
 			// Build pxeboot as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/boot/pxeboot",
+				"github.com/0magnet/u-root/cmds/boot/pxeboot",
 			),
 		),
 		scriptvm.WithQEMUFn(

@@ -14,7 +14,7 @@ import (
 	"github.com/hugelgupf/vmtest/govmtest"
 	"github.com/hugelgupf/vmtest/qemu"
 	"github.com/hugelgupf/vmtest/testtmp"
-	"github.com/u-root/u-root/pkg/cp"
+	"github.com/0magnet/u-root/pkg/cp"
 )
 
 func TestIntegration(t *testing.T) {
@@ -37,7 +37,7 @@ func TestIntegration(t *testing.T) {
 	}
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/mount"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/mount"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
 			// CONFIG_ATA_PIIX is required for this option to work.

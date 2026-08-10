@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 type creator interface {

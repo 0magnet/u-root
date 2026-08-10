@@ -10,7 +10,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/traceroute"
+	"github.com/0magnet/u-root/pkg/traceroute"
 )
 
 func TestUDP4Packet(t *testing.T) {

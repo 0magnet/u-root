@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/u-root/u-root/pkg/boot/systembooter"
-	"github.com/u-root/u-root/pkg/ipmi"
-	"github.com/u-root/u-root/pkg/ipmi/ocp"
-	"github.com/u-root/u-root/pkg/smbios"
-	"github.com/u-root/u-root/pkg/ulog"
-	"github.com/u-root/u-root/pkg/vpd"
+	"github.com/0magnet/u-root/pkg/boot/systembooter"
+	"github.com/0magnet/u-root/pkg/ipmi"
+	"github.com/0magnet/u-root/pkg/ipmi/ocp"
+	"github.com/0magnet/u-root/pkg/smbios"
+	"github.com/0magnet/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/vpd"
 )
 
 var (

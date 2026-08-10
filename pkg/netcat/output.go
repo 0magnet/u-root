@@ -10,7 +10,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 type OutputOptions struct {

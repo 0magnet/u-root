@@ -23,8 +23,8 @@ func TestHelloWorld(t *testing.T) {
 			uimage.WithInit("init"),
 			uimage.WithUinit("helloworld"),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/integration/testcmd/helloworld",
-				"github.com/u-root/u-root/cmds/core/init",
+				"github.com/0magnet/u-root/integration/testcmd/helloworld",
+				"github.com/0magnet/u-root/cmds/core/init",
 			),
 		),
 		qemu.WithVMTimeout(time.Minute),
@@ -46,8 +46,8 @@ func TestHelloWorldNegative(t *testing.T) {
 			uimage.WithInit("init"),
 			uimage.WithUinit("helloworld"),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/integration/testcmd/helloworld",
-				"github.com/u-root/u-root/cmds/core/init",
+				"github.com/0magnet/u-root/integration/testcmd/helloworld",
+				"github.com/0magnet/u-root/cmds/core/init",
 			),
 		),
 		qemu.WithVMTimeout(time.Minute),
@@ -69,8 +69,8 @@ func TestSluinitWithUnexpectedUinitArgs(t *testing.T) {
 			uimage.WithInit("init"),
 			uimage.WithUinit("sluinit"),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/sluinit",
-				"github.com/u-root/u-root/cmds/core/init",
+				"github.com/0magnet/u-root/cmds/core/sluinit",
+				"github.com/0magnet/u-root/cmds/core/init",
 			),
 		),
 		qemu.WithAppendKernel("uroot.uinitargs=\"x y\""),

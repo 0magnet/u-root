@@ -14,7 +14,7 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 func newMock(errStr string, inBuf, outBuf io.ReadWriter, f *os.File) *Chip {

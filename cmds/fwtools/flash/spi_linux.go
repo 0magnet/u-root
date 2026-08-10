@@ -11,8 +11,8 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/u-root/u-root/pkg/flash"
-	"github.com/u-root/u-root/pkg/spidev"
+	"github.com/0magnet/u-root/pkg/flash"
+	"github.com/0magnet/u-root/pkg/spidev"
 )
 
 type spidevProgrammer struct {

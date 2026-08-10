@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/ipmi/blobs"
+	"github.com/0magnet/u-root/pkg/ipmi/blobs"
 )
 
 type mockBlobReader struct {

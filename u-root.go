@@ -92,7 +92,7 @@ func main() {
 	// Otherwise, the template can't erase the default packages and all
 	// templates would be forced to use cmds/core/*.
 	if len(pkgs) == 0 && tf.Config == "" {
-		pkgs = []string{"github.com/u-root/u-root/cmds/core/*"}
+		pkgs = []string{"github.com/0magnet/u-root/cmds/core/*"}
 	}
 	if err := mkuimage.CreateUimage(l, m, tf, f, pkgs); err != nil {
 		l.Errorf("mkuimage error: %v", err)

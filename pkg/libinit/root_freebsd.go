@@ -16,9 +16,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/cmdline"
-	"github.com/u-root/u-root/pkg/cp"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/cp"
+	"github.com/0magnet/u-root/pkg/ulog"
 	"golang.org/x/sys/unix"
 )
 

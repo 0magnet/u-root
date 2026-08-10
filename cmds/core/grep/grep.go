@@ -36,7 +36,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 var errQuiet = fmt.Errorf("not found")

@@ -9,8 +9,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/u-root/u-root/pkg/cmos"
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/cmos"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 func init() {

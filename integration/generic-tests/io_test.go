@@ -27,7 +27,7 @@ func TestIO(t *testing.T) {
 	}
 
 	vm := scriptvm.Start(t, "vm", strings.Join(testCmd, " "),
-		scriptvm.WithUimage(uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/io")),
+		scriptvm.WithUimage(uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/io")),
 		scriptvm.WithQEMUFn(qemu.WithVMTimeout(30*time.Second)),
 	)
 
@@ -45,7 +45,7 @@ func TestCMOS(t *testing.T) {
 
 	script := "io cw 14 1 cr 14 cw 14 0 cr 14"
 	vm := scriptvm.Start(t, "vm", script,
-		scriptvm.WithUimage(uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/io")),
+		scriptvm.WithUimage(uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/io")),
 		scriptvm.WithQEMUFn(qemu.WithVMTimeout(30*time.Second)),
 	)
 

@@ -13,9 +13,9 @@ import (
 	"math"
 	"os"
 
-	"github.com/u-root/u-root/pkg/boot/image"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/boot/image"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 type kimage struct {

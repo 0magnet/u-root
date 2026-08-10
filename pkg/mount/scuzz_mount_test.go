@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/mount/scuzz"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount/scuzz"
 )
 
 func TestIdentify(t *testing.T) {

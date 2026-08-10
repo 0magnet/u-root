@@ -24,7 +24,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/u-root/u-root/pkg/termios"
+	"github.com/0magnet/u-root/pkg/termios"
 )
 
 func page(t *termios.TTYIO, r io.Reader, w io.Writer) error {

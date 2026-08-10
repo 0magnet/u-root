@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/cpio"
+	"github.com/0magnet/u-root/pkg/cpio"
 	"github.com/u-root/uio/uio"
 )
 

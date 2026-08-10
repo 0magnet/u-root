@@ -19,21 +19,21 @@ import (
 func netcatVM(t *testing.T, name, script string, net *qnetwork.InterVM, mods ...uimage.Modifier) *qemu.VM {
 	fixedMods := []uimage.Modifier{
 		uimage.WithBusyboxCommands(
-			"github.com/u-root/u-root/cmds/core/basename",
-			"github.com/u-root/u-root/cmds/core/cat",
-			"github.com/u-root/u-root/cmds/core/dirname",
-			"github.com/u-root/u-root/cmds/core/echo",
-			"github.com/u-root/u-root/cmds/core/grep",
-			"github.com/u-root/u-root/cmds/core/ip",
-			"github.com/u-root/u-root/cmds/core/kill",
-			"github.com/u-root/u-root/cmds/core/mkfifo",
-			"github.com/u-root/u-root/cmds/core/rm",
-			"github.com/u-root/u-root/cmds/core/seq",
-			"github.com/u-root/u-root/cmds/core/shasum",
-			"github.com/u-root/u-root/cmds/core/sleep",
+			"github.com/0magnet/u-root/cmds/core/basename",
+			"github.com/0magnet/u-root/cmds/core/cat",
+			"github.com/0magnet/u-root/cmds/core/dirname",
+			"github.com/0magnet/u-root/cmds/core/echo",
+			"github.com/0magnet/u-root/cmds/core/grep",
+			"github.com/0magnet/u-root/cmds/core/ip",
+			"github.com/0magnet/u-root/cmds/core/kill",
+			"github.com/0magnet/u-root/cmds/core/mkfifo",
+			"github.com/0magnet/u-root/cmds/core/rm",
+			"github.com/0magnet/u-root/cmds/core/seq",
+			"github.com/0magnet/u-root/cmds/core/shasum",
+			"github.com/0magnet/u-root/cmds/core/sleep",
 		),
 		uimage.WithCoveredCommands(
-			"github.com/u-root/u-root/cmds/core/netcat",
+			"github.com/0magnet/u-root/cmds/core/netcat",
 		),
 	}
 

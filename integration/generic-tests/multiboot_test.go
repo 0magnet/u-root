@@ -19,7 +19,7 @@ import (
 	"github.com/hugelgupf/vmtest/qemu"
 	"github.com/hugelgupf/vmtest/scriptvm"
 	"github.com/u-root/mkuimage/uimage"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
 )
 
 type nopCloser struct {
@@ -49,8 +49,8 @@ func testMultiboot(t *testing.T, kernel string) {
 			// Build kexec as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/core/kexec",
-				"github.com/u-root/u-root/cmds/core/sync",
+				"github.com/0magnet/u-root/cmds/core/kexec",
+				"github.com/0magnet/u-root/cmds/core/sync",
 			),
 			uimage.WithFiles(
 				src+":kernel",

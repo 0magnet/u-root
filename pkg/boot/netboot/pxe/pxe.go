@@ -16,9 +16,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/syslinux"
-	"github.com/u-root/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/syslinux"
+	"github.com/0magnet/u-root/pkg/curl"
 )
 
 // ParseConfig probes for config files based on the Mac and IP given

@@ -9,9 +9,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot/ibft"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/boot/ibft"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
 )
 
 // MultibootImage is a multiboot-formated OSImage, such as ESXi, Xen, Akaros,

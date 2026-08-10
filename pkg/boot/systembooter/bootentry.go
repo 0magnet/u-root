@@ -8,9 +8,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/u-root/u-root/pkg/crypto"
-	"github.com/u-root/u-root/pkg/ulog"
-	"github.com/u-root/u-root/pkg/vpd"
+	"github.com/0magnet/u-root/pkg/crypto"
+	"github.com/0magnet/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/vpd"
 )
 
 // Get, Set and GetAll are defined here as variables so they can be overridden

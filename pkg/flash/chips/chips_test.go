@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/flash/chips"
+	"github.com/0magnet/u-root/pkg/flash/chips"
 )
 
 func TestLookup(t *testing.T) {

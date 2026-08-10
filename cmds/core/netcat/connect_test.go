@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/u-root/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/netcat"
 )
 
 type closableDiscard struct{}

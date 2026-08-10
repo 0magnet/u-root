@@ -11,7 +11,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 var errWrongType = errors.New("wrong Type")

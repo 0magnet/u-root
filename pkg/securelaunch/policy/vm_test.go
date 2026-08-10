@@ -12,7 +12,7 @@ import (
 	"github.com/hugelgupf/vmtest/govmtest"
 	"github.com/hugelgupf/vmtest/guest"
 	"github.com/hugelgupf/vmtest/qemu"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
 )
 
 const blk = "sda1"
@@ -127,7 +127,7 @@ func TestVM(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vmpolicy",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/securelaunch/policy"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/securelaunch/policy"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(2*time.Minute),
 			// CONFIG_ATA_PIIX is required for this option to work.

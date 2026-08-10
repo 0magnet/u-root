@@ -17,10 +17,10 @@ import (
 	"strings"
 
 	"github.com/google/go-tpm/legacy/tpm2"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/config"
-	"github.com/u-root/u-root/pkg/securelaunch/eventlog"
-	"github.com/u-root/u-root/pkg/tss"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/config"
+	"github.com/0magnet/u-root/pkg/securelaunch/eventlog"
+	"github.com/0magnet/u-root/pkg/tss"
 )
 
 var (

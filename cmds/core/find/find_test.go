@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/find"
+	"github.com/0magnet/u-root/pkg/find"
 )
 
 // create creates a file with a standard mode.

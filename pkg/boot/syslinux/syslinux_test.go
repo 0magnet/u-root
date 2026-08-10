@@ -17,10 +17,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/boottest"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
-	"github.com/u-root/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/boottest"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/curl"
 )
 
 func mustParseURL(s string) *url.URL {

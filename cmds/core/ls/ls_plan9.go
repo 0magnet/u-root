@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/ls"
+	"github.com/0magnet/u-root/pkg/ls"
 )
 
 var final = flag.Bool("p", false, "Print only the final path element of each file name")

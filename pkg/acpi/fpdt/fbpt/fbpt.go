@@ -12,8 +12,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/acpi/fpdt"
-	"github.com/u-root/u-root/pkg/uefivars"
+	"github.com/0magnet/u-root/pkg/acpi/fpdt"
+	"github.com/0magnet/u-root/pkg/uefivars"
 )
 
 const (

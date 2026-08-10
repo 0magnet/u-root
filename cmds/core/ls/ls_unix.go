@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/ls"
+	"github.com/0magnet/u-root/pkg/ls"
 )
 
 func (c cmd) printFile(stringer ls.Stringer, f file) {

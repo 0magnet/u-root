@@ -35,8 +35,8 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/u-root/u-root/pkg/ls"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/ls"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 type cmd struct {

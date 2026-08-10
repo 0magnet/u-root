@@ -14,7 +14,7 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 // Assumptions:

@@ -9,7 +9,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
 )
 
 // KexecLoad loads arm64 Image, with the given ramfs and kernel cmdline.

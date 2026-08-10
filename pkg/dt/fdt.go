@@ -16,7 +16,7 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/align"
+	"github.com/0magnet/u-root/pkg/align"
 	"github.com/u-root/uio/uio"
 )
 

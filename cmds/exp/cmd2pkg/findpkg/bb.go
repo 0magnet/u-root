@@ -19,7 +19,7 @@ import (
 	"strings"
 
 	"github.com/u-root/gobusybox/src/pkg/golang"
-	"github.com/u-root/u-root/cmds/exp/cmd2pkg/bbinternal"
+	"github.com/0magnet/u-root/cmds/exp/cmd2pkg/bbinternal"
 	"github.com/u-root/uio/ulog"
 	"golang.org/x/tools/go/packages"
 	"mvdan.cc/sh/v3/shell"
@@ -86,19 +86,19 @@ func newPackages(l ulog.Logger, genv *golang.Environ, env Env, patterns ...strin
 //   - relative and absolute paths including globs following Go's
 //     filepath.Match format.
 //
-//   - Go package paths; e.g. github.com/u-root/u-root/cmds/core/ls
+//   - Go package paths; e.g. github.com/0magnet/u-root/cmds/core/ls
 //
-//   - Globs of Go package paths, e.g github.com/u-root/u-root/cmds/i* (using
+//   - Globs of Go package paths, e.g github.com/0magnet/u-root/cmds/i* (using
 //     path.Match format).
 //
 //   - Go package path expansions with ..., e.g.
-//     github.com/u-root/u-root/cmds/core/...
+//     github.com/0magnet/u-root/cmds/core/...
 //
 //   - file system paths (with globs in filepath.Match format) relative to
 //     GBB_PATH, e.g. cmds/core/ls if GBB_PATH contains $HOME/u-root.
 //
 //   - backwards compatibility: UROOT_SOURCE is a GBB_PATH, and patterns that
-//     begin with github.com/u-root/u-root/ will attempt to use UROOT_SOURCE
+//     begin with github.com/0magnet/u-root/ will attempt to use UROOT_SOURCE
 //     first to find Go commands within.
 //
 // If a pattern starts with "-", it excludes the matching package(s).
@@ -112,15 +112,15 @@ func newPackages(l ulog.Logger, genv *golang.Environ, env Env, patterns ...strin
 //
 //   - ./foobar/glob*
 //
-//   - github.com/u-root/u-root/cmds/core/...
+//   - github.com/0magnet/u-root/cmds/core/...
 //
-//   - github.com/u-root/u-root/cmds/core/ip
+//   - github.com/0magnet/u-root/cmds/core/ip
 //
-//   - github.com/u-root/u-root/cmds/core/g*lob
+//   - github.com/0magnet/u-root/cmds/core/g*lob
 //
 //   - GBB_PATH=$HOME/u-root:$HOME/yourproject cmds/core/* cmd/foobar
 //
-//   - UROOT_SOURCE=$HOME/u-root github.com/u-root/u-root/cmds/core/ip
+//   - UROOT_SOURCE=$HOME/u-root github.com/0magnet/u-root/cmds/core/ip
 func NewPackages(l ulog.Logger, genv *golang.Environ, env Env, names ...string) ([]*bbinternal.Package, error) {
 	if genv == nil {
 		return nil, fmt.Errorf("go build environment must be specified")
@@ -296,7 +296,7 @@ func (e Env) Glob(l ulog.Logger, pattern string) (isPath bool, absPaths []string
 	if len(e.URootSource) > 0 {
 		// Prefer urootSource to gbbPaths in this case.
 		prefixes = append([]string{"", e.URootSource}, e.GBBPath...)
-		pattern = strings.TrimPrefix(pattern, "github.com/u-root/u-root/")
+		pattern = strings.TrimPrefix(pattern, "github.com/0magnet/u-root/")
 	}
 
 	// We track matches because we want to ignore individual files.
@@ -345,7 +345,7 @@ type Env struct {
 
 	// URootSource is a special GBBPath. It's a directory that will be used
 	// to look for u-root commands. If a u-root command is given as a
-	// pattern with the "github.com/u-root/u-root/" Go package path prefix,
+	// pattern with the "github.com/0magnet/u-root/" Go package path prefix,
 	// URootSource will be used to find the command source.
 	//
 	// The default is to use UROOT_SOURCE env var.

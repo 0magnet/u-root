@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 var tmpBuf = []byte{0, 0, 0, 0, 0, 0}

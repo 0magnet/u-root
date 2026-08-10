@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/flash/chips"
-	"github.com/u-root/u-root/pkg/flash/op"
+	"github.com/0magnet/u-root/pkg/flash/chips"
+	"github.com/0magnet/u-root/pkg/flash/op"
 	"golang.org/x/sys/unix"
 )
 

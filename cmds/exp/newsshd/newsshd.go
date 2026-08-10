@@ -16,7 +16,7 @@ import (
 
 	"github.com/creack/pty"
 	"github.com/gliderlabs/ssh"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 func handler(s ssh.Session) {

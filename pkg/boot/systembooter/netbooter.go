@@ -11,7 +11,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 // NetBooter implements the Booter interface for booting over DHCPv6.

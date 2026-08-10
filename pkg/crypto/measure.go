@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	tss "github.com/u-root/u-root/pkg/tss"
+	tss "github.com/0magnet/u-root/pkg/tss"
 )
 
 const (

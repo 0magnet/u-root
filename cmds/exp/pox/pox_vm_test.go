@@ -23,7 +23,7 @@ func TestIntegrationPox(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/cmds/exp/pox"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/cmds/exp/pox"),
 		govmtest.WithQEMUFn(qemu.WithVMTimeout(time.Minute)),
 	)
 }

@@ -24,7 +24,7 @@ import (
 	pcap "github.com/packetcap/go-pcap"
 
 	"github.com/gopacket/gopacket/layers"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 type flags struct {

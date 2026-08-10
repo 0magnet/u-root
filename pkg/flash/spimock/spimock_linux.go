@@ -12,9 +12,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/flash/chips"
-	"github.com/u-root/u-root/pkg/flash/op"
-	"github.com/u-root/u-root/pkg/spidev"
+	"github.com/0magnet/u-root/pkg/flash/chips"
+	"github.com/0magnet/u-root/pkg/flash/op"
+	"github.com/0magnet/u-root/pkg/spidev"
 	"golang.org/x/sys/unix"
 )
 

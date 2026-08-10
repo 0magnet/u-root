@@ -11,7 +11,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot/systembooter"
+	"github.com/0magnet/u-root/pkg/boot/systembooter"
 )
 
 func TestParseNetboot(t *testing.T) {

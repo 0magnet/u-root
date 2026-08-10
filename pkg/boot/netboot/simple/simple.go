@@ -12,9 +12,9 @@ import (
 	"math"
 	"net/url"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/fit"
-	"github.com/u-root/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/fit"
+	"github.com/0magnet/u-root/pkg/curl"
 )
 
 // FetchAndProbe fetches the file at the specified URL and checks if it is an

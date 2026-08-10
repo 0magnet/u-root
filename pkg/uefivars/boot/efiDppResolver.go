@@ -12,8 +12,8 @@ import (
 	"os"
 	fp "path/filepath"
 
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/block"
 	"golang.org/x/sys/unix"
 )
 

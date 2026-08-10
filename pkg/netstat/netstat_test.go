@@ -12,7 +12,7 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/netstat"
+	"github.com/0magnet/u-root/pkg/netstat"
 )
 
 func TestOutputNewOutput(t *testing.T) {

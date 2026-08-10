@@ -41,12 +41,12 @@ func TestUEFIBoot(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/kexec",
-				"github.com/u-root/u-root/cmds/core/sync",
+				"github.com/0magnet/u-root/cmds/core/kexec",
+				"github.com/0magnet/u-root/cmds/core/sync",
 			),
 			// Since busybox mode rewrites commands, build uefiboot
 			// straight up as a binary to get integration test coverage.
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/exp/uefiboot"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/exp/uefiboot"),
 		),
 		scriptvm.WithQEMUFn(
 			qemu.WithVMTimeout(2*time.Minute),

@@ -15,7 +15,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/u-root/u-root/pkg/ls"
+	"github.com/0magnet/u-root/pkg/ls"
 )
 
 var ErrInvalidRegexp = errors.New("invalid regular expression")

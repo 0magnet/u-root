@@ -38,10 +38,10 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/gpt"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/gpt"
 	"github.com/u-root/uio/uio"
 )
 

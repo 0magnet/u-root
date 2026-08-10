@@ -18,7 +18,7 @@ func TestIntegration(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/gpio"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/gpio"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
 			// Make GPIOs nums 10 to 20 available through the

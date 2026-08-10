@@ -20,7 +20,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/mount/loop"
+	"github.com/0magnet/u-root/pkg/mount/loop"
 )
 
 var detach = flag.Bool("d", false, "Detach the device")

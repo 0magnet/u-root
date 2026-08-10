@@ -16,7 +16,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/msr"
+	"github.com/0magnet/u-root/pkg/msr"
 )
 
 var (

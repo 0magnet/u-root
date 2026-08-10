@@ -11,7 +11,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/brctl"
+	"github.com/0magnet/u-root/pkg/brctl"
 )
 
 // cli

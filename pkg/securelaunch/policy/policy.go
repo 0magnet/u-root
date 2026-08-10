@@ -16,12 +16,12 @@ import (
 	"fmt"
 	"log"
 
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/config"
-	"github.com/u-root/u-root/pkg/securelaunch/eventlog"
-	"github.com/u-root/u-root/pkg/securelaunch/launcher"
-	"github.com/u-root/u-root/pkg/securelaunch/measurement"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/config"
+	"github.com/0magnet/u-root/pkg/securelaunch/eventlog"
+	"github.com/0magnet/u-root/pkg/securelaunch/launcher"
+	"github.com/0magnet/u-root/pkg/securelaunch/measurement"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
 )
 
 // Policy describes the policy used to drive the security engine.

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot/boottest"
+	"github.com/0magnet/u-root/pkg/boot/boottest"
 )
 
 // Enable this to generate new configs.

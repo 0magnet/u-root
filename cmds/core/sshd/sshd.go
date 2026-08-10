@@ -16,7 +16,7 @@ import (
 	"os/exec"
 
 	"github.com/pkg/sftp"
-	"github.com/u-root/u-root/pkg/pty"
+	"github.com/0magnet/u-root/pkg/pty"
 	"golang.org/x/crypto/ssh"
 )
 

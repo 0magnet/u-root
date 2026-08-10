@@ -28,7 +28,7 @@ func TestESXi(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/exp/esxiboot",
+				"github.com/0magnet/u-root/cmds/exp/esxiboot",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -83,7 +83,7 @@ func TestESXiNVMe(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/exp/esxiboot",
+				"github.com/0magnet/u-root/cmds/exp/esxiboot",
 			),
 		),
 		scriptvm.WithQEMUFn(

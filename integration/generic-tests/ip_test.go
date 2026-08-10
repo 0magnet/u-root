@@ -20,10 +20,10 @@ func ipVM(t *testing.T, name, script string, net *qnetwork.InterVM) *qemu.VM {
 	return scriptvm.Start(t, name, script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/grep",
-				"github.com/u-root/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/grep",
+				"github.com/0magnet/u-root/cmds/core/sleep",
 			),
 		),
 		scriptvm.WithQEMUFn(

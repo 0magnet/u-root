@@ -11,7 +11,7 @@ import (
 	"net"
 	"slices"
 
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 // Modifier modifies the SMBIOS data

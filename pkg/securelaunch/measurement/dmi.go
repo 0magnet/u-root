@@ -12,9 +12,9 @@ import (
 	"log"
 	"strings"
 
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
-	"github.com/u-root/u-root/pkg/smbios"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
+	"github.com/0magnet/u-root/pkg/smbios"
 )
 
 type fieldCluster struct {

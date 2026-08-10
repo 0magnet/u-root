@@ -15,7 +15,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/align"
+	"github.com/0magnet/u-root/pkg/align"
 )
 
 var pageMask = uint(os.Getpagesize() - 1)

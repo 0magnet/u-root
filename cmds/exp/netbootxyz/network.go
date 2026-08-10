@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/u-root/u-root/pkg/dhclient"
+	"github.com/0magnet/u-root/pkg/dhclient"
 	"github.com/vishvananda/netlink"
 )
 

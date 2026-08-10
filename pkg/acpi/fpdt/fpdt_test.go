@@ -11,7 +11,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/acpi"
 )
 
 // TestFPDT verifies that all data within ACPI FBPT

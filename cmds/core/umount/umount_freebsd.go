@@ -8,7 +8,7 @@ import (
 	"errors"
 	"flag"
 
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 var force = flag.Bool("f", false, "Force unmount")

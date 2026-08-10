@@ -9,7 +9,7 @@ import (
 	"errors"
 	"testing"
 
-	trafficctl "github.com/u-root/u-root/pkg/tc"
+	trafficctl "github.com/0magnet/u-root/pkg/tc"
 )
 
 func TestParseActionGAT(t *testing.T) {

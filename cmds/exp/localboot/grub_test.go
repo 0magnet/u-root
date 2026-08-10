@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount/block"
 )
 
 func FuzzParseGrubCfg(f *testing.F) {

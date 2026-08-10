@@ -36,7 +36,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/u-root/u-root/pkg/ls"
+	"github.com/0magnet/u-root/pkg/ls"
 )
 
 var (

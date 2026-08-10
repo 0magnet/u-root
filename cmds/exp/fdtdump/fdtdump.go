@@ -20,7 +20,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 var asJSON = flag.Bool("json", false, "Print json with base64 encoded values.")

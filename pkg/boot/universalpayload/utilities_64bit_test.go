@@ -9,7 +9,7 @@ package universalpayload
 import (
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
 )
 
 // TestSkipReservedRange64Bit tests 64-bit specific cases for skipReservedRange

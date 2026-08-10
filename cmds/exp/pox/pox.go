@@ -102,12 +102,12 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/u-root/u-root/pkg/cp"
-	"github.com/u-root/u-root/pkg/ldd"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/loop"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
-	"github.com/u-root/u-root/pkg/uzip"
+	"github.com/0magnet/u-root/pkg/cp"
+	"github.com/0magnet/u-root/pkg/ldd"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/loop"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/uzip"
 )
 
 var ErrUsage = errors.New("pox [-v] [-r] [-c]  [-f tcz-file] file [...file]")

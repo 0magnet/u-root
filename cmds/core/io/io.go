@@ -38,7 +38,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 type (

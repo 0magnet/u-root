@@ -36,7 +36,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/curl"
 	"github.com/u-root/uio/uio"
 
 	// To build the dependencies of this package with TinyGo, we need to include

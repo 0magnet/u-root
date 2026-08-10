@@ -37,11 +37,11 @@ func TestTczclient(t *testing.T) {
 	serverVM := scriptvm.Start(t, "tcz_server", serverScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/ls",
-				"github.com/u-root/u-root/cmds/core/shutdown",
-				"github.com/u-root/u-root/cmds/exp/srvfiles",
-				"github.com/u-root/u-root/cmds/exp/pxeserver",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/ls",
+				"github.com/0magnet/u-root/cmds/core/shutdown",
+				"github.com/0magnet/u-root/cmds/exp/srvfiles",
+				"github.com/0magnet/u-root/cmds/exp/pxeserver",
 			),
 			uimage.WithFiles(
 				"./testdata/tczserver:tcz",
@@ -68,12 +68,12 @@ func TestTczclient(t *testing.T) {
 	clientVM := scriptvm.Start(t, "tcz_client", clientScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/ls",
-				"github.com/u-root/u-root/cmds/core/shutdown",
-				"github.com/u-root/u-root/cmds/core/sleep",
-				"github.com/u-root/u-root/cmds/exp/tcz",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/ls",
+				"github.com/0magnet/u-root/cmds/core/shutdown",
+				"github.com/0magnet/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/exp/tcz",
 			),
 			uimage.WithFiles(
 				"./testdata/tczclient:tcz",

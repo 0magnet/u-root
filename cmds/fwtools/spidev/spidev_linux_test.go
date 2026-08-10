@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/flash/spimock"
-	"github.com/u-root/u-root/pkg/spidev"
+	"github.com/0magnet/u-root/pkg/flash/spimock"
+	"github.com/0magnet/u-root/pkg/spidev"
 )
 
 func TestRun(t *testing.T) {

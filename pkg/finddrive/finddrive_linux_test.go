@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/smbios"
+	"github.com/0magnet/u-root/pkg/smbios"
 )
 
 const (

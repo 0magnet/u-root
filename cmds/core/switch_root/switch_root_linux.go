@@ -12,7 +12,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 var (

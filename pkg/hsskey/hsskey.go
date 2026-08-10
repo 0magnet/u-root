@@ -24,8 +24,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/ipmi"
-	"github.com/u-root/u-root/pkg/ipmi/blobs"
+	"github.com/0magnet/u-root/pkg/ipmi"
+	"github.com/0magnet/u-root/pkg/ipmi/blobs"
 	"golang.org/x/crypto/hkdf"
 )
 

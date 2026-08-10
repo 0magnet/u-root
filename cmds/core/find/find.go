@@ -25,7 +25,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/find"
+	"github.com/0magnet/u-root/pkg/find"
 )
 
 var (

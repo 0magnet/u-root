@@ -11,7 +11,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/cluster/health"
+	"github.com/0magnet/u-root/pkg/cluster/health"
 )
 
 func TestList(t *testing.T) {

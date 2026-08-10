@@ -18,8 +18,8 @@ import (
 	"github.com/hugelgupf/vmtest/govmtest"
 	"github.com/hugelgupf/vmtest/guest"
 	"github.com/hugelgupf/vmtest/qemu"
-	"github.com/u-root/u-root/pkg/cp"
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/cp"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 // VM setup:
@@ -52,7 +52,7 @@ func TestVM(t *testing.T) {
 		t.Fatalf("copying testdata/mbrdisk to %q:got %v, want nil", mbrdisk, err)
 	}
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/securelaunch"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/securelaunch"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(2*time.Minute),
 

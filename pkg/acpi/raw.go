@@ -10,7 +10,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/memio"
+	"github.com/0magnet/u-root/pkg/memio"
 )
 
 // Raw ACPI table support. Raw tables are those tables

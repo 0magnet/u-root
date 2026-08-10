@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"testing"
 
-	trafficctl "github.com/u-root/u-root/pkg/tc"
+	trafficctl "github.com/0magnet/u-root/pkg/tc"
 )
 
 func TestParseFilterArgs(t *testing.T) {

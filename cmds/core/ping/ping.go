@@ -40,7 +40,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/u-root/u-root/pkg/uroot/util"
+	"github.com/0magnet/u-root/pkg/uroot/util"
 	"golang.org/x/net/icmp"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"

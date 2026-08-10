@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/acpi"
-	"github.com/u-root/u-root/pkg/acpi/fpdt"
+	"github.com/0magnet/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/acpi/fpdt"
 )
 
 // TestFBPT just verifies that the FBPT table reads OK.

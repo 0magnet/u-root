@@ -9,7 +9,7 @@ package boot
 import (
 	"fmt"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
 	"github.com/u-root/uio/ulog"
 
 	// To build the dependencies of this package with TinyGo, we need to include

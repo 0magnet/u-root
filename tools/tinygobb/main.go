@@ -67,7 +67,7 @@ func main() {
 		log.Fatalf("can not find unique builddir from %q, got %q", dir, build)
 	}
 
-	rushdir := filepath.Join(build[0], "src/github.com/u-root/u-root/cmds/exp/rush/")
+	rushdir := filepath.Join(build[0], "src/github.com/0magnet/u-root/cmds/exp/rush/")
 
 	// Fixup rush.
 	if err := os.WriteFile(filepath.Join(rushdir, "rush_tinygo.go"), []byte(code), 0o644); err != nil {

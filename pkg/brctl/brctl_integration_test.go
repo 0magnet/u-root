@@ -38,7 +38,7 @@ func TestVM(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/brctl"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/brctl"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
 			qemu.ArbitraryArgs("-nic", fmt.Sprintf("user,id=%s", BRCTL_TEST_IFACE_0)),

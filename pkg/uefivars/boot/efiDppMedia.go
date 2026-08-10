@@ -15,8 +15,8 @@ import (
 	fp "path/filepath"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/uefivars"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/uefivars"
 )
 
 type EfiDppMediaSubType EfiDevPathProtoSubType

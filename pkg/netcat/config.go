@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 // Default values for the netcat command.

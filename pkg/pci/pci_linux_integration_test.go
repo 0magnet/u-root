@@ -14,7 +14,7 @@ import (
 
 func TestVM(t *testing.T) {
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/pci"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/pci"),
 		govmtest.WithQEMUFn(qemu.WithVMTimeout(time.Minute)),
 	)
 }

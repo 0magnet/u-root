@@ -35,14 +35,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/boot/linux"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
-	"github.com/u-root/u-root/pkg/boot/purgatory"
-	"github.com/u-root/u-root/pkg/boot/universalpayload"
-	"github.com/u-root/u-root/pkg/cmdline"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/linux"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/boot/purgatory"
+	"github.com/0magnet/u-root/pkg/boot/universalpayload"
+	"github.com/0magnet/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 	"github.com/u-root/uio/uio"
 )
 

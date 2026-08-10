@@ -14,11 +14,11 @@ import (
 	"os"
 	"unicode"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/measurement"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/measurement"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
 )
 
 // BootEntry holds the names and hashes for a kernel and initrd and the command

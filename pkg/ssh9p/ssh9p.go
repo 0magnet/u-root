@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/hugelgupf/p9/p9"
-	"github.com/u-root/u-root/pkg/sshstream"
+	"github.com/0magnet/u-root/pkg/sshstream"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/sys/unix"

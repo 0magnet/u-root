@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	cpuid "github.com/u-root/cpuid"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
 )
 
 const defaultCPUIDFile = "cpuid.txt"

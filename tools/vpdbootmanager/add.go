@@ -12,8 +12,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/u-root/u-root/pkg/boot/systembooter"
-	"github.com/u-root/u-root/pkg/vpd"
+	"github.com/0magnet/u-root/pkg/boot/systembooter"
+	"github.com/0magnet/u-root/pkg/vpd"
 )
 
 var dryRun = false

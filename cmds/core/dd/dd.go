@@ -47,7 +47,7 @@ import (
 	"strings"
 
 	"github.com/rck/unit"
-	"github.com/u-root/u-root/pkg/progress"
+	"github.com/0magnet/u-root/pkg/progress"
 )
 
 type bitClearAndSet struct {

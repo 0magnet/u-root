@@ -14,8 +14,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/u-root/u-root/pkg/netstat"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/netstat"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 var help = `usage: netstat [-WeenNC] [<Af>] -r         netstat {-h|--help}

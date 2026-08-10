@@ -11,10 +11,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/acpi"
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/fit"
-	"github.com/u-root/u-root/pkg/vfile"
+	"github.com/0magnet/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/fit"
+	"github.com/0magnet/u-root/pkg/vfile"
 )
 
 var (

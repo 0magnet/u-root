@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/u-root/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/acpi"
 )
 
 var cmdUsage = "Usage: rsdp"

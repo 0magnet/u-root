@@ -26,7 +26,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/u-root/u-root/pkg/ldd"
+	"github.com/0magnet/u-root/pkg/ldd"
 )
 
 func main() {

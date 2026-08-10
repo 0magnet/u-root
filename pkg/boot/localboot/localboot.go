@@ -9,15 +9,15 @@ import (
 	"context"
 	"sort"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/bls"
-	"github.com/u-root/u-root/pkg/boot/esxi"
-	"github.com/u-root/u-root/pkg/boot/grub"
-	"github.com/u-root/u-root/pkg/boot/iso"
-	"github.com/u-root/u-root/pkg/boot/syslinux"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/bls"
+	"github.com/0magnet/u-root/pkg/boot/esxi"
+	"github.com/0magnet/u-root/pkg/boot/grub"
+	"github.com/0magnet/u-root/pkg/boot/iso"
+	"github.com/0magnet/u-root/pkg/boot/syslinux"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 // parse treats device as a block device with a file system.

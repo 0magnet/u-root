@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/lsb"
+	"github.com/0magnet/u-root/pkg/lsb"
 )
 
 const (

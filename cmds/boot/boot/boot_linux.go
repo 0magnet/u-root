@@ -37,14 +37,14 @@ import (
 	"log"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/bootcmd"
-	"github.com/u-root/u-root/pkg/boot/localboot"
-	"github.com/u-root/u-root/pkg/boot/menu"
-	"github.com/u-root/u-root/pkg/cmdline"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/bootcmd"
+	"github.com/0magnet/u-root/pkg/boot/localboot"
+	"github.com/0magnet/u-root/pkg/boot/menu"
+	"github.com/0magnet/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 var (

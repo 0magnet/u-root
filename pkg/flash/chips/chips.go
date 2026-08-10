@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/u-root/u-root/pkg/flash/op"
+	"github.com/0magnet/u-root/pkg/flash/op"
 )
 
 const (

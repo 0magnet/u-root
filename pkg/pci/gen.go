@@ -17,7 +17,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/pci"
 )
 
 var (

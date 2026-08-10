@@ -34,8 +34,8 @@ import (
 	"golang.org/x/tools/go/packages"
 
 	"github.com/u-root/gobusybox/src/pkg/golang"
-	"github.com/u-root/u-root/cmds/exp/cmd2pkg/bbinternal"
-	"github.com/u-root/u-root/cmds/exp/cmd2pkg/findpkg"
+	"github.com/0magnet/u-root/cmds/exp/cmd2pkg/bbinternal"
+	"github.com/0magnet/u-root/cmds/exp/cmd2pkg/findpkg"
 	"github.com/u-root/uio/ulog"
 )
 

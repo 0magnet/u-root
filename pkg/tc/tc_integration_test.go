@@ -14,7 +14,7 @@ import (
 	"github.com/hugelgupf/vmtest/govmtest"
 	"github.com/hugelgupf/vmtest/guest"
 	"github.com/hugelgupf/vmtest/qemu"
-	trafficctl "github.com/u-root/u-root/pkg/tc"
+	trafficctl "github.com/0magnet/u-root/pkg/tc"
 )
 
 const (
@@ -24,7 +24,7 @@ const (
 
 func TestVM(t *testing.T) {
 	govmtest.Run(t, "tc integration",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/tc"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/tc"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute*2),
 			qemu.ArbitraryArgs("-nic", fmt.Sprintf("user,id=%s", DummyInterface0)),

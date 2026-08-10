@@ -17,7 +17,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/termios"
+	"github.com/0magnet/u-root/pkg/termios"
 )
 
 // New returns a new Pty.

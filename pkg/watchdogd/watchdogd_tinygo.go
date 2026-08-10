@@ -44,7 +44,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/u-root/u-root/pkg/watchdog"
+	"github.com/0magnet/u-root/pkg/watchdog"
 	"golang.org/x/sys/unix"
 )
 

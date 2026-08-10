@@ -65,9 +65,9 @@ func TestUPLBootArm64(t *testing.T) {
 		scriptvm.WithUimage(
 			uimage.WithEnv(golang.WithGOARCH("arm64")),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/init",
-				"github.com/u-root/u-root/cmds/core/kexec",
-				"github.com/u-root/u-root/cmds/core/gosh",
+				"github.com/0magnet/u-root/cmds/core/init",
+				"github.com/0magnet/u-root/cmds/core/kexec",
+				"github.com/0magnet/u-root/cmds/core/gosh",
 			),
 			uimage.WithFiles(fmt.Sprintf("%s:/ext/upl", upl)),
 			uimage.WithUinitCommand("/bbin/kexec /ext/upl"),

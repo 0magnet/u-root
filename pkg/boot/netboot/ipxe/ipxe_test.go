@@ -13,9 +13,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/curl"
-	"github.com/u-root/u-root/pkg/ulog/ulogtest"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/ulog/ulogtest"
 	"github.com/u-root/uio/uio"
 )
 

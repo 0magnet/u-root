@@ -19,8 +19,8 @@ import (
 	"github.com/hugelgupf/vmtest/guest"
 	"github.com/hugelgupf/vmtest/qemu"
 	"github.com/rekby/gpt"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/pci"
 )
 
 // VM setup:
@@ -47,7 +47,7 @@ import (
 func TestVM(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/mount/block"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/mount/block"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
 			// CONFIG_ATA_PIIX is required for this option to work.

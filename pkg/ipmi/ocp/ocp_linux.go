@@ -14,9 +14,9 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/ipmi"
-	"github.com/u-root/u-root/pkg/pci"
-	"github.com/u-root/u-root/pkg/smbios"
+	"github.com/0magnet/u-root/pkg/ipmi"
+	"github.com/0magnet/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/smbios"
 )
 
 const (

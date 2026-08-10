@@ -39,12 +39,12 @@ func TestMountKexec(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/sync",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/sync",
 			),
 			// Build kexec as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/kexec"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/kexec"),
 			uimage.WithFiles(fmt.Sprintf("%s:kernel", os.Getenv("VMTEST_KERNEL"))),
 			uimage.WithCPIOOutput(initrd),
 		),
@@ -89,12 +89,12 @@ func TestMountKexecLoad(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/sync",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/sync",
 			),
 			// Build kexec as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/kexec"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/kexec"),
 			uimage.WithFiles(
 				fmt.Sprintf("%s:kernel", os.Getenv("VMTEST_KERNEL")),
 				gzipP,
@@ -137,11 +137,11 @@ func TestMountKexecLoadOnly(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/cat",
 			),
 			// Build kexec as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/kexec"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/kexec"),
 			uimage.WithFiles(
 				fmt.Sprintf("%s:kernel", os.Getenv("VMTEST_KERNEL")),
 				gzipP,
@@ -180,12 +180,12 @@ func TestMountKexecLoadCustomDTB(t *testing.T) {
 	vm := scriptvm.Start(t, "vm", script,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/cp",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/cp",
 			),
 			// Build kexec as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/kexec"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/kexec"),
 			uimage.WithFiles(
 				fmt.Sprintf("%s:kernel", os.Getenv("VMTEST_KERNEL")),
 			),

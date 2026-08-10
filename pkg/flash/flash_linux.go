@@ -14,10 +14,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/u-root/u-root/pkg/flash/chips"
-	"github.com/u-root/u-root/pkg/flash/op"
-	"github.com/u-root/u-root/pkg/flash/sfdp"
-	"github.com/u-root/u-root/pkg/spidev"
+	"github.com/0magnet/u-root/pkg/flash/chips"
+	"github.com/0magnet/u-root/pkg/flash/op"
+	"github.com/0magnet/u-root/pkg/flash/sfdp"
+	"github.com/0magnet/u-root/pkg/spidev"
 )
 
 // sfdpMaxAddress is the highest possible SFDP address (24 bit address space).

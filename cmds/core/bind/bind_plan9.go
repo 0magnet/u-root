@@ -25,7 +25,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/namespace"
+	"github.com/0magnet/u-root/pkg/namespace"
 )
 
 func main() {

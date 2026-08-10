@@ -14,7 +14,7 @@ import (
 	"slices"
 	"strings"
 
-	builder "github.com/u-root/u-root/tools/tinygo-buildstatus/pkg"
+	builder "github.com/0magnet/u-root/tools/tinygo-buildstatus/pkg"
 )
 
 var (

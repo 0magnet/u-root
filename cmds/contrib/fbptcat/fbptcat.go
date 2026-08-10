@@ -12,9 +12,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/u-root/u-root/pkg/acpi"
-	"github.com/u-root/u-root/pkg/acpi/fpdt"
-	"github.com/u-root/u-root/pkg/acpi/fpdt/fbpt"
+	"github.com/0magnet/u-root/pkg/acpi"
+	"github.com/0magnet/u-root/pkg/acpi/fpdt"
+	"github.com/0magnet/u-root/pkg/acpi/fpdt/fbpt"
 )
 
 func main() {

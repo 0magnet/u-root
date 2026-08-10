@@ -29,8 +29,8 @@ func TestPing(t *testing.T) {
 	serverVM := scriptvm.Start(t, "ping_server", serverScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -65,10 +65,10 @@ func TestPing(t *testing.T) {
 	clientVM := scriptvm.Start(t, "ping_client", clientScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
 			),
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/ping"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/ping"),
 		),
 		scriptvm.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),

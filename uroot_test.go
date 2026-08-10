@@ -18,15 +18,15 @@ import (
 	"testing"
 
 	gbbgolang "github.com/u-root/gobusybox/src/pkg/golang"
-	"github.com/u-root/u-root/pkg/cpio"
-	"github.com/u-root/u-root/pkg/testutil"
-	itest "github.com/u-root/u-root/pkg/uroot/initramfs/test"
+	"github.com/0magnet/u-root/pkg/cpio"
+	"github.com/0magnet/u-root/pkg/testutil"
+	itest "github.com/0magnet/u-root/pkg/uroot/initramfs/test"
 	"github.com/u-root/uio/uio"
 )
 
 var twocmds = []string{
-	"github.com/u-root/u-root/cmds/core/ls",
-	"github.com/u-root/u-root/cmds/core/init",
+	"github.com/0magnet/u-root/cmds/core/ls",
+	"github.com/0magnet/u-root/cmds/core/init",
 }
 
 type noDeadCode struct {
@@ -70,11 +70,11 @@ func (v noDeadCode) Validate(a *cpio.Archive) error {
 		syms[sym] = true
 	}
 	// 3. Check for presence and absence of particular symbols.
-	if !syms["github.com/u-root/u-root/pkg/uroot/test/bar.Bar.UsedInterfaceMethod"] {
+	if !syms["github.com/0magnet/u-root/pkg/uroot/test/bar.Bar.UsedInterfaceMethod"] {
 		// Sanity check of the test itself: this method must be in the binary.
 		return fmt.Errorf("expected symbol not found, something is wrong with the build")
 	}
-	if syms["github.com/u-root/u-root/pkg/uroot/test/bar.Bar.UnusedNonInterfaceMethod"] {
+	if syms["github.com/0magnet/u-root/pkg/uroot/test/bar.Bar.UnusedNonInterfaceMethod"] {
 		// Sanity check of the test itself: this method must be in the binary.
 		delFiles = false
 		return fmt.Errorf(
@@ -162,7 +162,7 @@ func TestUrootCmdline(t *testing.T) {
 	bareTests := []testCase{
 		{
 			name: "uinitcmd",
-			args: []string{"-uinitcmd=echo foobar fuzz", "-defaultsh=", "github.com/u-root/u-root/cmds/core/init", "github.com/u-root/u-root/cmds/core/echo"},
+			args: []string{"-uinitcmd=echo foobar fuzz", "-defaultsh=", "github.com/0magnet/u-root/cmds/core/init", "github.com/0magnet/u-root/cmds/core/echo"},
 			err:  nil,
 			validators: []itest.ArchiveValidator{
 				itest.HasRecord{cpio.Symlink("bin/uinit", "../bbin/echo")},
@@ -176,7 +176,7 @@ func TestUrootCmdline(t *testing.T) {
 			name: "dead_code_elimination",
 			args: []string{
 				// Build the world + test symbols, unstripped.
-				"-no-strip", "world", "github.com/u-root/u-root/pkg/uroot/test/foo",
+				"-no-strip", "world", "github.com/0magnet/u-root/pkg/uroot/test/foo",
 			},
 			err: nil,
 			validators: []itest.ArchiveValidator{

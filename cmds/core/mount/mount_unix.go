@@ -27,7 +27,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount"
 	"golang.org/x/sys/unix"
 )
 

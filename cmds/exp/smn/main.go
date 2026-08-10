@@ -30,7 +30,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/pci"
 )
 
 // Index/Data register pairs, as, e.g., cf8/cfc for PCI,

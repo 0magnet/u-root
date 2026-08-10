@@ -20,7 +20,7 @@ func TestIntegration(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/ipmi"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/ipmi"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
 			// This integration test requires kernel built with the following options set:

@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/u-root/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/cmdline"
 	"golang.org/x/sys/unix"
 )
 

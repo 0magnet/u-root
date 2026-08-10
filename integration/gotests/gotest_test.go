@@ -24,10 +24,10 @@ func testPkgs(t *testing.T) []string {
 	// Packages which do not contain tests (or do not contain tests for the
 	// build target) will still compile a test binary which vacuously pass.
 	cmd := exec.Command("go", "list",
-		"github.com/u-root/u-root/cmds/boot/...",
-		"github.com/u-root/u-root/cmds/core/...",
-		"github.com/u-root/u-root/cmds/exp/...",
-		"github.com/u-root/u-root/pkg/...",
+		"github.com/0magnet/u-root/cmds/boot/...",
+		"github.com/0magnet/u-root/cmds/core/...",
+		"github.com/0magnet/u-root/cmds/exp/...",
+		"github.com/0magnet/u-root/pkg/...",
 	)
 	cmd.Env = append(os.Environ(), "GOARCH="+string(qemu.GuestArch()))
 	out, err := cmd.CombinedOutput()
@@ -41,58 +41,58 @@ func testPkgs(t *testing.T) []string {
 	// 1. either it requires networking (not enabled in the kernel)
 	// 2. or it depends on some test files (for example /bin/sleep)
 	blocklist := []string{
-		"github.com/u-root/u-root/cmds/core/cmp",
-		"github.com/u-root/u-root/cmds/core/dd",
-		"github.com/u-root/u-root/cmds/core/fusermount",
-		"github.com/u-root/u-root/cmds/core/gosh",
-		"github.com/u-root/u-root/cmds/core/wget",
-		"github.com/u-root/u-root/cmds/core/netcat",
-		"github.com/u-root/u-root/cmds/core/which",
+		"github.com/0magnet/u-root/cmds/core/cmp",
+		"github.com/0magnet/u-root/cmds/core/dd",
+		"github.com/0magnet/u-root/cmds/core/fusermount",
+		"github.com/0magnet/u-root/cmds/core/gosh",
+		"github.com/0magnet/u-root/cmds/core/wget",
+		"github.com/0magnet/u-root/cmds/core/netcat",
+		"github.com/0magnet/u-root/cmds/core/which",
 		// Some of TestEdCommands do not exit properly and end up left running. No idea how to fix this yet.
-		"github.com/u-root/u-root/cmds/exp/ed",
-		"github.com/u-root/u-root/cmds/exp/pox",
-		"github.com/u-root/u-root/pkg/crypto",
-		"github.com/u-root/u-root/pkg/tarutil",
-		"github.com/u-root/u-root/pkg/ldd",
+		"github.com/0magnet/u-root/cmds/exp/ed",
+		"github.com/0magnet/u-root/cmds/exp/pox",
+		"github.com/0magnet/u-root/pkg/crypto",
+		"github.com/0magnet/u-root/pkg/tarutil",
+		"github.com/0magnet/u-root/pkg/ldd",
 
 		// These have special configuration.
-		"github.com/u-root/u-root/pkg/gpio",
-		"github.com/u-root/u-root/pkg/mount",
-		"github.com/u-root/u-root/pkg/mount/block",
-		"github.com/u-root/u-root/pkg/mount/loop",
-		"github.com/u-root/u-root/pkg/ipmi",
-		"github.com/u-root/u-root/pkg/smbios",
+		"github.com/0magnet/u-root/pkg/gpio",
+		"github.com/0magnet/u-root/pkg/mount",
+		"github.com/0magnet/u-root/pkg/mount/block",
+		"github.com/0magnet/u-root/pkg/mount/loop",
+		"github.com/0magnet/u-root/pkg/ipmi",
+		"github.com/0magnet/u-root/pkg/smbios",
 
 		// Missing xzcat in VM.
-		"github.com/u-root/u-root/cmds/exp/bzimage",
-		"github.com/u-root/u-root/pkg/boot/bzimage",
+		"github.com/0magnet/u-root/cmds/exp/bzimage",
+		"github.com/0magnet/u-root/pkg/boot/bzimage",
 
 		// ??
-		"github.com/u-root/u-root/pkg/tss",
-		"github.com/u-root/u-root/pkg/syscallfilter",
+		"github.com/0magnet/u-root/pkg/tss",
+		"github.com/0magnet/u-root/pkg/syscallfilter",
 	}
 	switch qemu.GuestArch() {
 	case qemu.ArchArm64:
 		blocklist = append(blocklist,
-			"github.com/u-root/u-root/pkg/strace",
+			"github.com/0magnet/u-root/pkg/strace",
 
 			// These tests run in 1-2 seconds on x86, but run
 			// beyond their huge timeout under arm64 in the VM. Not
 			// sure why. Slow emulation?
-			"github.com/u-root/u-root/cmds/core/pci",
-			"github.com/u-root/u-root/cmds/exp/cbmem",
-			"github.com/u-root/u-root/pkg/vfile",
+			"github.com/0magnet/u-root/cmds/core/pci",
+			"github.com/0magnet/u-root/cmds/exp/cbmem",
+			"github.com/0magnet/u-root/pkg/vfile",
 		)
 
 	case qemu.ArchArm:
 		blocklist = append(blocklist,
-			"github.com/u-root/u-root/cmds/exp/cbmem",
+			"github.com/0magnet/u-root/cmds/exp/cbmem",
 
 			// These 4 tests do not compile on arm.
-			"github.com/u-root/u-root/pkg/boot/kexec",
-			"github.com/u-root/u-root/pkg/flash/chips",
-			"github.com/u-root/u-root/pkg/mount/gpt",
-			"github.com/u-root/u-root/pkg/mount/mtd",
+			"github.com/0magnet/u-root/pkg/boot/kexec",
+			"github.com/0magnet/u-root/pkg/flash/chips",
+			"github.com/0magnet/u-root/pkg/mount/gpt",
+			"github.com/0magnet/u-root/pkg/mount/mtd",
 		)
 	}
 
@@ -114,7 +114,7 @@ func TestGoTest(t *testing.T) {
 		govmtest.WithPackageToTest(pkgs...),
 		govmtest.WithUimage(
 			uimage.WithShell("gosh"),
-			uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/*"),
+			uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/*"),
 			uimage.WithFiles(
 				"/etc/group",
 				"/etc/passwd",

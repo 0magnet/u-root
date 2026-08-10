@@ -13,8 +13,8 @@ import (
 	"github.com/hugelgupf/vmtest/govmtest"
 	"github.com/hugelgupf/vmtest/guest"
 	"github.com/hugelgupf/vmtest/qemu"
-	"github.com/u-root/u-root/pkg/cp"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/cp"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
 )
 
 const kernelStr = "" +
@@ -69,7 +69,7 @@ func TestSecureLaunchLauncherVM(t *testing.T) {
 	}
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/securelaunch/launcher"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/securelaunch/launcher"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(2*time.Minute),
 			// CONFIG_ATA_PIIX is required for this option to work.

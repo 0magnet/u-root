@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 func readFile(t *testing.T, path string) []byte {

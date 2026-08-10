@@ -19,7 +19,7 @@ import (
 	"github.com/hugelgupf/vmtest/qemu/qnetwork"
 	"github.com/hugelgupf/vmtest/scriptvm"
 	"github.com/u-root/mkuimage/uimage"
-	"github.com/u-root/u-root/pkg/testutil"
+	"github.com/0magnet/u-root/pkg/testutil"
 )
 
 // TestDhclientQEMU4 uses QEMU's DHCP server to test dhclient.
@@ -55,13 +55,13 @@ func TestDhclientQEMU4(t *testing.T) {
 			// Build dhclient as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
 			uimage.WithCoveredCommands(
-				"github.com/u-root/u-root/cmds/core/dhclient",
+				"github.com/0magnet/u-root/cmds/core/dhclient",
 			),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/cat",
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/core/sleep",
-				"github.com/u-root/u-root/cmds/core/wget",
+				"github.com/0magnet/u-root/cmds/core/cat",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/core/sleep",
+				"github.com/0magnet/u-root/cmds/core/wget",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -97,8 +97,8 @@ func TestDhclientTimesOut(t *testing.T) {
 		scriptvm.WithUimage(
 			// Build dhclient as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/dhclient"),
-			uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/sleep"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/dhclient"),
+			uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/sleep"),
 		),
 		scriptvm.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),
@@ -137,8 +137,8 @@ func TestDhclient6(t *testing.T) {
 	serverVM := scriptvm.Start(t, "dhcp6_server", serverScript,
 		scriptvm.WithUimage(
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/ip",
-				"github.com/u-root/u-root/cmds/exp/pxeserver",
+				"github.com/0magnet/u-root/cmds/core/ip",
+				"github.com/0magnet/u-root/cmds/exp/pxeserver",
 			),
 		),
 		scriptvm.WithQEMUFn(
@@ -156,8 +156,8 @@ func TestDhclient6(t *testing.T) {
 		scriptvm.WithUimage(
 			// Build dhclient as a binary command to get accurate GOCOVERDIR
 			// integration coverage data (busybox rewrites command code).
-			uimage.WithCoveredCommands("github.com/u-root/u-root/cmds/core/dhclient"),
-			uimage.WithBusyboxCommands("github.com/u-root/u-root/cmds/core/ip"),
+			uimage.WithCoveredCommands("github.com/0magnet/u-root/cmds/core/dhclient"),
+			uimage.WithBusyboxCommands("github.com/0magnet/u-root/cmds/core/ip"),
 		),
 		scriptvm.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute),

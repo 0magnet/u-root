@@ -11,9 +11,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/mount"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
+	"github.com/0magnet/u-root/pkg/mount"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
 )
 
 // Describes the "files" portion of policy file.

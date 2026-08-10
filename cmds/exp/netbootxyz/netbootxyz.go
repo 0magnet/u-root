@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/boot/menu"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/menu"
 	"gopkg.in/yaml.v2"
 
 	// To build the dependencies of this package with TinyGo, we need to include

@@ -34,12 +34,12 @@ func TestGoshRegression2938(t *testing.T) {
 			uimage.WithUinit("/script.sh"),
 			uimage.WithShell("gosh"),
 			uimage.WithBusyboxCommands(
-				"github.com/u-root/u-root/cmds/core/init",
-				"github.com/u-root/u-root/cmds/core/sync",
-				"github.com/u-root/u-root/cmds/core/echo",
+				"github.com/0magnet/u-root/cmds/core/init",
+				"github.com/0magnet/u-root/cmds/core/sync",
+				"github.com/0magnet/u-root/cmds/core/echo",
 			),
 			uimage.WithBinaryCommands(
-				"github.com/u-root/u-root/cmds/core/gosh",
+				"github.com/0magnet/u-root/cmds/core/gosh",
 			),
 			uimage.WithFiles(
 				fmt.Sprintf("%s:script.sh", scriptPath),

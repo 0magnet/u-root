@@ -13,7 +13,7 @@ import (
 	"testing"
 
 	"github.com/hugelgupf/vmtest/guest"
-	"github.com/u-root/u-root/pkg/watchdogd"
+	"github.com/0magnet/u-root/pkg/watchdogd"
 )
 
 func TestRun(t *testing.T) {

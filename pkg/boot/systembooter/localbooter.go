@@ -10,7 +10,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 // LocalBooter implements the Booter interface for booting from local storage.

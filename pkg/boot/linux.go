@@ -12,11 +12,11 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/boot/linux"
-	"github.com/u-root/u-root/pkg/boot/pez"
-	"github.com/u-root/u-root/pkg/boot/util"
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/linux"
+	"github.com/0magnet/u-root/pkg/boot/pez"
+	"github.com/0magnet/u-root/pkg/boot/util"
+	"github.com/0magnet/u-root/pkg/mount"
 	"github.com/u-root/uio/uio"
 	"golang.org/x/sys/unix"
 )

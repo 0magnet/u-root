@@ -51,7 +51,7 @@ import (
 	"log"
 	"os"
 
-	tftppkg "github.com/u-root/u-root/pkg/tftp"
+	tftppkg "github.com/0magnet/u-root/pkg/tftp"
 	"pack.ag/tftp"
 )
 

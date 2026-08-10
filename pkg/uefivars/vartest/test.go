@@ -14,7 +14,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/upath"
+	"github.com/0magnet/u-root/pkg/upath"
 )
 
 // Extracts testdata zip for use as efivars in tests. Used in uefivars and subpackages.

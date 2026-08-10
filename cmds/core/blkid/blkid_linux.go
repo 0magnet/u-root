@@ -11,7 +11,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount/block"
 )
 
 func run(getBlock func() (block.BlockDevices, error), out io.Writer) error {

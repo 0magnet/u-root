@@ -14,11 +14,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/boot/multiboot"
-	"github.com/u-root/u-root/pkg/boot/util"
-	"github.com/u-root/u-root/pkg/crypto"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/boot/multiboot"
+	"github.com/0magnet/u-root/pkg/boot/util"
+	"github.com/0magnet/u-root/pkg/crypto"
 )
 
 // BootConfig is a general-purpose boot configuration. It draws some

@@ -15,13 +15,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/grub"
-	"github.com/u-root/u-root/pkg/curl"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/mount/loop"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/grub"
+	"github.com/0magnet/u-root/pkg/curl"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/mount/loop"
+	"github.com/0magnet/u-root/pkg/ulog"
 
 	"golang.org/x/sys/unix"
 )

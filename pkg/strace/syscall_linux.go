@@ -24,7 +24,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/u-root/u-root/pkg/strace/internal/abi"
+	"github.com/0magnet/u-root/pkg/strace/internal/abi"
 	"golang.org/x/sys/unix"
 )
 

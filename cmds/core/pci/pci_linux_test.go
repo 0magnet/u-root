@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/pci"
+	"github.com/0magnet/u-root/pkg/pci"
 )
 
 func TestRun(t *testing.T) {
@@ -232,7 +232,7 @@ func TestRegisters(t *testing.T) {
 // go test, see it pass.
 // go test -test.run TestJSON
 // PASS
-// ok  	github.com/u-root/u-root/cmds/core/pci	0.002s
+// ok  	github.com/0magnet/u-root/cmds/core/pci	0.002s
 // in the JSON file, change the JSON for Primary:
 // +               "Primary": "00",
 // -               "Primary": 55,
@@ -244,9 +244,9 @@ func TestRegisters(t *testing.T) {
 //	pci_test.go:247: run() got json: cannot unmarshal string into Go struct field PCI.Primary of type uint8:JSON parsing failed, want nil
 //
 // Change the true to false on the if. So the code is removed at link time.
-// rminnich@pop-os:~/go/src/github.com/u-root/u-root/cmds/core/pci$ go test -test.run TestJSONWeirdness
+// rminnich@pop-os:~/go/src/github.com/0magnet/u-root/cmds/core/pci$ go test -test.run TestJSONWeirdness
 // PASS
-// ok  	github.com/u-root/u-root/cmds/core/pci	0.002s
+// ok  	github.com/0magnet/u-root/cmds/core/pci	0.002s
 // NOTE, the JSON did not change between the bad and good run; only the way in which you called
 // Unmarshal.
 // So, just enabling those lines cause the PREVIOUS Unmarshal's to fail! Precrime!

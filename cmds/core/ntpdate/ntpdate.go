@@ -29,7 +29,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/u-root/u-root/pkg/ntpdate"
+	"github.com/0magnet/u-root/pkg/ntpdate"
 )
 
 var (

@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/strace"
+	"github.com/0magnet/u-root/pkg/strace"
 )
 
 // If we are being traced, none of this will work.

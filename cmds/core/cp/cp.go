@@ -30,8 +30,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/cp"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/cp"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 )
 
 var errUsage = errors.New("usage: cp [-RrifvP] file[s] ... dest")

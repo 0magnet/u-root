@@ -17,14 +17,14 @@ import (
 	"time"
 
 	"github.com/u-root/iscsinl"
-	"github.com/u-root/u-root/pkg/cmdline"
-	"github.com/u-root/u-root/pkg/dhclient"
-	slaunch "github.com/u-root/u-root/pkg/securelaunch"
-	"github.com/u-root/u-root/pkg/securelaunch/config"
-	"github.com/u-root/u-root/pkg/securelaunch/eventlog"
-	"github.com/u-root/u-root/pkg/securelaunch/launcher"
-	"github.com/u-root/u-root/pkg/securelaunch/policy"
-	"github.com/u-root/u-root/pkg/securelaunch/tpm"
+	"github.com/0magnet/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/dhclient"
+	slaunch "github.com/0magnet/u-root/pkg/securelaunch"
+	"github.com/0magnet/u-root/pkg/securelaunch/config"
+	"github.com/0magnet/u-root/pkg/securelaunch/eventlog"
+	"github.com/0magnet/u-root/pkg/securelaunch/launcher"
+	"github.com/0magnet/u-root/pkg/securelaunch/policy"
+	"github.com/0magnet/u-root/pkg/securelaunch/tpm"
 )
 
 // booEntryFlag holds the name of the flag pointing to the boot entry to load.

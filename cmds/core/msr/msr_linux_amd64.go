@@ -70,8 +70,8 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/u-root/u-root/pkg/forth"
-	"github.com/u-root/u-root/pkg/msr"
+	"github.com/0magnet/u-root/pkg/forth"
+	"github.com/0magnet/u-root/pkg/msr"
 )
 
 // let's just do MSRs for now

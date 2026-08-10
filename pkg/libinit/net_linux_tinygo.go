@@ -7,7 +7,7 @@
 package libinit
 
 import (
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 // Stub for notifying the user that network functionality is not supported on linux platforms

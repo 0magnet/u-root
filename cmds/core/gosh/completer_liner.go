@@ -17,7 +17,7 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/liner"
+	"github.com/0magnet/u-root/pkg/liner"
 	"mvdan.cc/sh/v3/interp"
 	"mvdan.cc/sh/v3/syntax"
 )

@@ -23,8 +23,8 @@ import (
 	"log"
 	"math"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/boot/uefi"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/boot/uefi"
 )
 
 var (

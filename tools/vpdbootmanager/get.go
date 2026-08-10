@@ -9,7 +9,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/u-root/u-root/pkg/vpd"
+	"github.com/0magnet/u-root/pkg/vpd"
 )
 
 // NewGetter returns a new initialized Getter.

@@ -5,7 +5,7 @@
 
 package main
 
-import "github.com/u-root/u-root/pkg/netcat"
+import "github.com/0magnet/u-root/pkg/netcat"
 
 func init() {
 	osListeners[netcat.SOCKET_TYPE_SCTP] = listenToSCTPSocket

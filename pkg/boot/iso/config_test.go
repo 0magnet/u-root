@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/boot/boottest"
-	"github.com/u-root/u-root/pkg/mount"
-	"github.com/u-root/u-root/pkg/mount/block"
-	"github.com/u-root/u-root/pkg/ulog/ulogtest"
+	"github.com/0magnet/u-root/pkg/boot/boottest"
+	"github.com/0magnet/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount/block"
+	"github.com/0magnet/u-root/pkg/ulog/ulogtest"
 )
 
 func fakeDev(t *testing.T) (*block.BlockDev, string) {

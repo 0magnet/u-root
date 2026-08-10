@@ -10,8 +10,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/boot/menu"
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/boot/menu"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 // ShowMenuAndBoot handles common cleanup functions and flags that all boot

@@ -7,7 +7,7 @@ package main
 import (
 	"os/exec"
 
-	"github.com/u-root/u-root/pkg/libinit"
+	"github.com/0magnet/u-root/pkg/libinit"
 )
 
 func quiet() {

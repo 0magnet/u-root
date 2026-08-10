@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 // RangeType defines type of a TypedRange based on the Linux

@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/u-root/u-root/pkg/cmdline"
-	"github.com/u-root/u-root/pkg/libinit"
-	"github.com/u-root/u-root/pkg/uflag"
-	"github.com/u-root/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/cmdline"
+	"github.com/0magnet/u-root/pkg/libinit"
+	"github.com/0magnet/u-root/pkg/uflag"
+	"github.com/0magnet/u-root/pkg/ulog"
 )
 
 func quiet() {

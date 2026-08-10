@@ -16,9 +16,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/u-root/u-root/pkg/netcat"
-	"github.com/u-root/u-root/pkg/ulog"
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/ulog"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 
 	// To build the dependencies of this package with TinyGo, we need to include
 	// the cpuid package, since tinygo does not support the asm code in the

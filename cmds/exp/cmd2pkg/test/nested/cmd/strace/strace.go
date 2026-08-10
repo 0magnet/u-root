@@ -25,7 +25,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/u-root/u-root/pkg/strace"
+	"github.com/0magnet/u-root/pkg/strace"
 )
 
 const (

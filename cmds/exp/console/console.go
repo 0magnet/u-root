@@ -17,8 +17,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/u-root/u-root/pkg/libinit"
-	"github.com/u-root/u-root/pkg/pty"
+	"github.com/0magnet/u-root/pkg/libinit"
+	"github.com/0magnet/u-root/pkg/pty"
 )
 
 var (

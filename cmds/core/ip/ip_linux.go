@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/uroot/unixflag"
+	"github.com/0magnet/u-root/pkg/uroot/unixflag"
 	"github.com/vishvananda/netlink"
 	"github.com/vishvananda/netns"
 	"golang.org/x/sys/unix"

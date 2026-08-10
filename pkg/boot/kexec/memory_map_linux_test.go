@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 func checkMemoryMap(t *testing.T, got, want MemoryMap) {

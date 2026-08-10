@@ -18,8 +18,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/u-root/u-root/pkg/boot"
-	"github.com/u-root/u-root/pkg/libinit"
+	"github.com/0magnet/u-root/pkg/boot"
+	"github.com/0magnet/u-root/pkg/libinit"
 	"golang.org/x/sys/unix"
 )
 

@@ -8,7 +8,7 @@
 package loop
 
 import (
-	"github.com/u-root/u-root/pkg/mount"
+	"github.com/0magnet/u-root/pkg/mount"
 )
 
 // Loop represents a regular file exposed as a loop block device.

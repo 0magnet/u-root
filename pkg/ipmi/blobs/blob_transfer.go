@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/ipmi"
+	"github.com/0magnet/u-root/pkg/ipmi"
 )
 
 // CRCOption is an option for sending/receiving CRCs.

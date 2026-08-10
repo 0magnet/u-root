@@ -19,7 +19,7 @@ func TestIntegration(t *testing.T) {
 	qemu.SkipIfNotArch(t, qemu.ArchAMD64)
 
 	govmtest.Run(t, "vm",
-		govmtest.WithPackageToTest("github.com/u-root/u-root/pkg/smbios"),
+		govmtest.WithPackageToTest("github.com/0magnet/u-root/pkg/smbios"),
 		govmtest.WithQEMUFn(
 			qemu.WithVMTimeout(time.Minute*2),
 			qemu.ArbitraryArgs("-smbios", "type=2,manufacturer=u-root"),

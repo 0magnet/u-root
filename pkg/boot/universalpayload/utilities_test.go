@@ -18,8 +18,8 @@ import (
 	"unsafe"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/u-root/u-root/pkg/boot/kexec"
-	"github.com/u-root/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/dt"
 )
 
 func fdtReader(t *testing.T, fdt *dt.FDT) io.ReaderAt {

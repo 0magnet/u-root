@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/cpio"
+	"github.com/0magnet/u-root/pkg/cpio"
 )
 
 type testImage struct {

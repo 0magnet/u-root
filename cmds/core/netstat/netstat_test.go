@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/netstat"
+	"github.com/0magnet/u-root/pkg/netstat"
 )
 
 func TestRun(t *testing.T) {

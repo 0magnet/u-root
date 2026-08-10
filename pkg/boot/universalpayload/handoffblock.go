@@ -9,8 +9,8 @@ import (
 	"unsafe"
 
 	guid "github.com/google/uuid"
-	"github.com/u-root/u-root/pkg/align"
-	"github.com/u-root/u-root/pkg/boot/kexec"
+	"github.com/0magnet/u-root/pkg/align"
+	"github.com/0magnet/u-root/pkg/boot/kexec"
 )
 
 // EFIHOBGenericHeader types

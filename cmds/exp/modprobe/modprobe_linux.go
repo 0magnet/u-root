@@ -20,7 +20,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/u-root/u-root/pkg/kmodule"
+	"github.com/0magnet/u-root/pkg/kmodule"
 )
 
 const cmd = "modprobe [-an] modulename[s] [parameters...]"

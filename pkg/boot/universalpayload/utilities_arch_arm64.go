@@ -16,7 +16,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/u-root/u-root/pkg/align"
+	"github.com/0magnet/u-root/pkg/align"
 )
 
 func addrOfStart() uintptr

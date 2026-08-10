@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/uefivars"
-	"github.com/u-root/u-root/pkg/uefivars/vartest"
+	"github.com/0magnet/u-root/pkg/uefivars"
+	"github.com/0magnet/u-root/pkg/uefivars/vartest"
 )
 
 // main is needed to extract the testdata from a zip to temp dir, and to clean

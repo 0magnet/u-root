@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/u-root/u-root/pkg/ulog/ulogtest"
+	"github.com/0magnet/u-root/pkg/ulog/ulogtest"
 )
 
 func FuzzParseIpxeConfig(f *testing.F) {

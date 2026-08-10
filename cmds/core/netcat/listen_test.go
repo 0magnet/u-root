@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/u-root/u-root/pkg/netcat"
+	"github.com/0magnet/u-root/pkg/netcat"
 )
 
 func TestListenMode(t *testing.T) {

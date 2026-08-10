@@ -26,8 +26,8 @@ import (
 	"unicode"
 
 	"github.com/ProtonMail/go-crypto/openpgp"
-	"github.com/u-root/u-root/pkg/dt"
-	"github.com/u-root/u-root/pkg/vfile"
+	"github.com/0magnet/u-root/pkg/dt"
+	"github.com/0magnet/u-root/pkg/vfile"
 )
 
 // algs must only contain currently secure hash functions.
