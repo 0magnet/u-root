@@ -172,7 +172,7 @@ func (cmd *cmd) run() error {
 		cancel()
 	}()
 
-	if src, err = pcap.OpenLive(cmd.Opts.Device, int32(cmd.Opts.SnapshotLength), !cmd.Opts.NoPromisc, 0, false); err != nil {
+	if src, err = pcap.OpenLive(ctx, cmd.Opts.Device, int32(cmd.Opts.SnapshotLength), !cmd.Opts.NoPromisc, 0, false); err != nil {
 		if strings.Contains(err.Error(), "operation not permitted") {
 			return fmt.Errorf("you don't have permission to capture on that/these device(s)")
 		}
