@@ -11,6 +11,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"reflect"
+	"slices"
 	"sort"
 	"testing"
 
@@ -349,7 +350,7 @@ func TestResolve(t *testing.T) {
 				if tc.atLeast > 0 {
 					return
 				}
-				if !reflect.DeepEqual(out, tc.want) {
+				if !slices.Equal(out, tc.want) {
 					t.Errorf("ResolveGlobs(%v, %v) = %#v; want %#v", e, tc.in, out, tc.want)
 				}
 			})
@@ -397,7 +398,7 @@ func TestResolve(t *testing.T) {
 					pkgPaths = append(pkgPaths, p.Pkg.PkgPath)
 				}
 				sort.Strings(pkgPaths)
-				if !reflect.DeepEqual(pkgPaths, tc.want) {
+				if !slices.Equal(pkgPaths, tc.want) {
 					t.Errorf("NewPackages(%v, %v) = %v; want %v", e, tc.in, out, tc.want)
 				}
 			})
@@ -502,7 +503,7 @@ func TestModules(t *testing.T) {
 	wantNoModule := []string{
 		filepath.Join(dir, "nomod/cmd/cmd7"),
 	}
-	if !reflect.DeepEqual(noModulePkgs, wantNoModule) {
+	if !slices.Equal(noModulePkgs, wantNoModule) {
 		t.Errorf("modules() no module pkgs = %v, want %v", noModulePkgs, wantNoModule)
 	}
 
@@ -513,7 +514,7 @@ func TestModules(t *testing.T) {
 	e := Env{
 		GBBPath: []string{filepath.Join(dir, "mod1"), filepath.Join(dir, "mod2")},
 	}
-	if got := GlobPaths(&ulogtest.Logger{TB: t}, e, `cmd/cmd*`, "cmd/foo3", "-cmd/cmd2"); !reflect.DeepEqual(got, wantG) {
+	if got := GlobPaths(&ulogtest.Logger{TB: t}, e, `cmd/cmd*`, "cmd/foo3", "-cmd/cmd2"); !slices.Equal(got, wantG) {
 		t.Errorf("GlobPaths = %v, want %v", got, wantG)
 	}
 }

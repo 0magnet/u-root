@@ -18,8 +18,11 @@ import (
 
 // TTYIO contains state needed for controlling ttys.
 // On many systems, but not all, this is just an os.File
+// We export it because we can not possibly anticipate
+// all the functions that may be available for a file;
+// for example, unix.Ioctl has changed dramatically in 15 years.
 type TTYIO struct {
-	f *os.File
+	*os.File
 }
 
 // Winsize embeds unix.Winsize.
@@ -38,7 +41,7 @@ func NewWithDev(device string) (*TTYIO, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &TTYIO{f: f}, nil
+	return &TTYIO{File: f}, nil
 }
 
 // NewTTYS returns a new TTYIO.
@@ -47,7 +50,7 @@ func NewTTYS(port string) (*TTYIO, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &TTYIO{f: f}, nil
+	return &TTYIO{File: f}, nil
 }
 
 // GetTermios returns a filled-in Termios, from an fd.
@@ -56,22 +59,34 @@ func GetTermios(fd uintptr) (*Termios, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	// The 5 bit field covered by unix.CBAUD is not completely defined.
+	unixBaud := int(t.Cflag & unix.CBAUD)
+	if r, ok := unixB2baud[unixBaud]; ok {
+		t.Ispeed, t.Ospeed = r, r
+	}
 	return &Termios{Termios: *t}, nil
 }
 
 // Get terms a Termios from a TTYIO.
 func (t *TTYIO) Get() (*Termios, error) {
-	return GetTermios(t.f.Fd())
+	return GetTermios(t.Fd())
 }
 
 // SetTermios sets tty parameters for an fd from a Termios.
 func SetTermios(fd uintptr, ti *Termios) error {
-	return unix.IoctlSetTermios(int(fd), unix.TCSETS, &ti.Termios)
+	baud, ok := baud2unixB[int(ti.Ispeed)]
+	if !ok {
+		return fmt.Errorf("%d: Unrecognized baud rate", baud)
+	}
+	ti.Termios.Cflag &= ^uint32(unix.CBAUD)
+	ti.Termios.Cflag |= baud
+	return unix.IoctlSetTermios(int(fd), sets, &ti.Termios)
 }
 
 // Set sets tty parameters for a TTYIO from a Termios.
 func (t *TTYIO) Set(ti *Termios) error {
-	return SetTermios(t.f.Fd(), ti)
+	return SetTermios(t.Fd(), ti)
 }
 
 // GetWinSize gets window size from an fd.
@@ -82,7 +97,7 @@ func GetWinSize(fd uintptr) (*Winsize, error) {
 
 // GetWinSize gets window size from a TTYIO.
 func (t *TTYIO) GetWinSize() (*Winsize, error) {
-	return GetWinSize(t.f.Fd())
+	return GetWinSize(t.Fd())
 }
 
 // SetWinSize sets window size for an fd from a Winsize.
@@ -92,18 +107,18 @@ func SetWinSize(fd uintptr, w *Winsize) error {
 
 // SetWinSize sets window size for a TTYIO from a Winsize.
 func (t *TTYIO) SetWinSize(w *Winsize) error {
-	return SetWinSize(t.f.Fd(), w)
+	return SetWinSize(t.Fd(), w)
 }
 
 // Ctty sets the control tty into a Cmd, from a TTYIO.
 func (t *TTYIO) Ctty(c *exec.Cmd) {
-	c.Stdin, c.Stdout, c.Stderr = t.f, t.f, t.f
+	c.Stdin, c.Stdout, c.Stderr = t.File, t.File, t.File
 	if c.SysProcAttr == nil {
 		c.SysProcAttr = &syscall.SysProcAttr{}
 	}
 	c.SysProcAttr.Setctty = true
 	c.SysProcAttr.Setsid = true
-	c.SysProcAttr.Ctty = int(t.f.Fd())
+	c.SysProcAttr.Ctty = int(t.Fd())
 }
 
 // MakeRaw modifies Termio state so, if it used for an fd or tty, it will set it to raw mode.
@@ -121,6 +136,31 @@ func MakeRaw(term *Termios) *Termios {
 	return &raw
 }
 
+// MakeRawFile is similar to MakeRaw but operates on os.MakeRawFile
+// TODO: Potentially merge into MakeRaw?
+func MakeRawFile(r *os.File) error {
+	termios, err := unix.IoctlGetTermios(int(r.Fd()), unix.TCGETS)
+	if err != nil {
+		return err
+	}
+
+	termios.Iflag &^= unix.IGNBRK | unix.BRKINT | unix.PARMRK | unix.ISTRIP | unix.INLCR | unix.IGNCR | unix.ICRNL | unix.IXON
+	termios.Oflag &^= unix.OPOST
+	termios.Lflag &^= unix.ECHO | unix.ECHONL | unix.ICANON | unix.ISIG | unix.IEXTEN
+	termios.Cflag &^= unix.CSIZE | unix.PARENB
+	termios.Cflag |= unix.CS8
+	termios.Cc[unix.VMIN] = 1
+	termios.Cc[unix.VTIME] = 0
+
+	if err = unix.IoctlSetTermios(int(r.Fd()), unix.TCSETS, termios); err != nil {
+		return err
+	}
+	if err = syscall.SetNonblock(int(r.Fd()), true); err != nil {
+		return err
+	}
+	return nil
+}
+
 // MakeSerialBaud updates the Termios to set the baudrate
 func MakeSerialBaud(term *Termios, baud int) (*Termios, error) {
 	t := *term
@@ -131,8 +171,8 @@ func MakeSerialBaud(term *Termios, baud int) (*Termios, error) {
 
 	t.Cflag &^= unix.CBAUD
 	t.Cflag |= rate
-	t.Ispeed = rate
-	t.Ospeed = rate
+	t.Ispeed = uint32(baud)
+	t.Ospeed = uint32(baud)
 
 	return &t, nil
 }

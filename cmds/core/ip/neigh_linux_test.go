@@ -10,6 +10,7 @@ import (
 	"math"
 	"net"
 	"reflect"
+	"slices"
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
@@ -152,6 +153,7 @@ func TestParseNeighShowFlush(t *testing.T) {
 				Out:    new(bytes.Buffer),
 			},
 			wantAddr:     net.ParseIP("192.6.6.6"),
+			wantSubNet:   &net.IPNet{IP: net.ParseIP("192.6.6.6"), Mask: net.CIDRMask(32, 32)},
 			wantLinkName: "lo",
 			wantProxy:    true,
 			wantNud:      netlink.NUD_NONE,
@@ -404,7 +406,7 @@ func TestFilterNeighsByAddr(t *testing.T) {
 			if !reflect.DeepEqual(result, tt.expected) {
 				t.Errorf("Test %s failed: expected neighbors %v, got %v", tt.name, tt.expected, result)
 			}
-			if !reflect.DeepEqual(linkNames, tt.expectedLinkNames) {
+			if !slices.Equal(linkNames, tt.expectedLinkNames) {
 				t.Errorf("Test %s failed: expected link names %v, got %v", tt.name, tt.linkNames, tt.expectedLinkNames)
 			}
 		})

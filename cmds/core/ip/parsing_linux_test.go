@@ -6,6 +6,7 @@
 package main
 
 import (
+	"bytes"
 	"net"
 	"reflect"
 	"testing"
@@ -135,7 +136,7 @@ func TestParseAddress(t *testing.T) {
 				t.Errorf("parseAddress() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, tt.want) {
+			if !got.Equal(tt.want) {
 				t.Errorf("parseAddress() got = %v, want %v", got, tt.want)
 			}
 		})
@@ -180,7 +181,7 @@ func TestParseAddressorCIDR(t *testing.T) {
 			name:      "Valid IPv4",
 			cmd:       cmd{Args: []string{"cmd", "192.168.1.1"}},
 			wantIP:    net.ParseIP("192.168.1.1"),
-			wantIPNet: nil,
+			wantIPNet: mustParseCIDR("192.168.1.1/32"),
 			wantErr:   false,
 		},
 		{
@@ -234,10 +235,13 @@ func TestParseAddressorCIDR(t *testing.T) {
 				t.Errorf("parseAddressorCIDR() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(gotIP, tt.wantIP) {
+			if !gotIP.Equal(tt.wantIP) {
 				t.Errorf("parseAddressorCIDR() gotIP = %v, want %v", gotIP, tt.wantIP)
 			}
-			if !reflect.DeepEqual(gotIPNet, tt.wantIPNet) {
+			if tt.wantIPNet == nil {
+				return
+			}
+			if !gotIPNet.IP.Equal(tt.wantIPNet.IP) || !bytes.Equal(gotIPNet.Mask, tt.wantIPNet.Mask) {
 				t.Errorf("parseAddressorCIDR() gotIPNet = %v, want %v", gotIPNet, tt.wantIPNet)
 			}
 		})
@@ -269,7 +273,7 @@ func TestParseHardwareAddress(t *testing.T) {
 				t.Errorf("parseHardwareAddress() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, tt.want) {
+			if !bytes.Equal(got, tt.want) {
 				t.Errorf("parseHardwareAddress() = %v, want %v", got, tt.want)
 			}
 		})
@@ -295,7 +299,7 @@ func TestParseByte(t *testing.T) {
 				t.Errorf("parseByte() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, tt.want) {
+			if !bytes.Equal(got, tt.want) {
 				t.Errorf("parseByte() = %v, want %v", got, tt.want)
 			}
 		})
@@ -502,7 +506,7 @@ func TestParseNextHop(t *testing.T) {
 				if got != tt.want {
 					t.Errorf("parseNextHop() got = %v, want %v", got, tt.want)
 				}
-				if !reflect.DeepEqual(gotIP, tt.wantIP) {
+				if !gotIP.Equal(tt.wantIP) {
 					t.Errorf("parseNextHop() gotIP = %v, want %v", gotIP, tt.wantIP)
 				}
 			}

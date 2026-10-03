@@ -88,6 +88,7 @@ var (
 		"rdmsr",
 		"readlink",
 		"realpath",
+		"reboot",
 		"rm",
 		"rmmod",
 		"rsdp",
@@ -99,7 +100,7 @@ var (
 		"sleep",
 		// "sluinit",
 		"sort",
-		// "sshd",
+		"sshd",
 		"strace",
 		"strings",
 		"stty",
@@ -151,7 +152,10 @@ var (
 		"ed",
 		"efivarfs",
 		"esxiboot",
-		"fbnetboot",
+		// fbnetboot uses the deprecated client4, which reaches
+		// dhcpv4.NewDiscoveryForInterface (excluded by the tinygo tag since #564),
+		// so it no longer builds under TinyGo. Tracked in insomniacslk/dhcp#595.
+		// "fbnetboot",
 		"fbsplash",
 		"fdtdump",
 		"field",
@@ -206,6 +210,7 @@ var (
 	// There are good reasons to ignore some packages, e.g. they are guaranteed
 	// not to build for a certain OS, e.g. bind only works for p9 builds.
 	Ignore = map[string][]string{
-		"bind": {"linux", "freebsd", "darwin", "windows"},
+		"bind":     {"linux", "freebsd", "darwin", "windows"},
+		"slattach": {"linux", "freebsd", "darwin", "windows"},
 	}
 )
