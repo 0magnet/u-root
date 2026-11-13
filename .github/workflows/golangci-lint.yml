@@ -24,5 +24,7 @@ jobs:
       - name: golangci-lint
         uses: golangci/golangci-lint-action@82606bf257cbaff209d206a39f5134f0cfbfd2ee # v9.2.1
         with:
-          version: v2.11.3
+          # v2.11.3 cannot read Go 1.27 export data: "export data version 4
+          # is greater than maximum supported version 2".
+          version: v2.15.0
           args: --timeout=5m
